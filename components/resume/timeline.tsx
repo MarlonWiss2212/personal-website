@@ -3,7 +3,6 @@ import TimelineDateBox from "./timeline-date-box"
 export default function Timeline() {
   return (
     <div className="flex flex-col flex-grow overflow-y-scroll text-white md:px-10">
-      <TimelineDateBox year="2018" text="Zeitungszusteller bei der Rhein-Zeitung. Bis Ende 2019" title="Minijob als Zeitungszusteller" onRight={false}></TimelineDateBox>
       <TimelineDateBox
         year="2019-2020"
         text="Erste Erfahrungen beim Programmieren mit der Entwicklung eines 2D Spiels mit der Unity Game Engine. Das Spiel ist unter der Projekt-Seite als APK-Datei zu finden."
