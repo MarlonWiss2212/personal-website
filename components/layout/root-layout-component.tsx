@@ -1,7 +1,6 @@
 "use client"
 
 import { AcademicCapIcon, Bars3Icon, CodeBracketSquareIcon, DocumentTextIcon, FolderIcon, HomeIcon, RectangleStackIcon, XMarkIcon } from "@heroicons/react/24/outline"
-import "./globals.css"
 import { usePathname } from "next/navigation"
 import { Inter } from "next/font/google"
 import { Dialog, Transition } from "@headlessui/react"
