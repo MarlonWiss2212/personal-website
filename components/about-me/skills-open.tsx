@@ -4,7 +4,7 @@ export default function SkillsOpen() {
   const circumference = 35 * 2 * Math.PI
 
   return (
-    <div className="p-4 rounded-2xl">
+    <div className="p-4 w-full rounded-2xl">
       <div className="flex flex-col gap-2">
         <h3 className="text-xl font-bold">Programmiersprachen</h3>
         <div className="flex flex-wrap gap-2">
