@@ -8,8 +8,8 @@ export default function ProjectBox({ project }: { project: ProjectType }) {
         <h4>{project.message}</h4>
       </div>
       <div className="flex flex-row gap-2">
-        {project.images.map((image) => (
-          <img src={image} alt="" className="w-8 h-8 rounded-xl" />
+        {project.images.map((image, index) => (
+          <img key={index} src={image} alt="" className="w-8 h-8 rounded-xl" />
         ))}
       </div>
     </div>
