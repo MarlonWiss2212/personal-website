@@ -12,8 +12,8 @@ export default function Projects() {
     <div className="flex flex-col gap-10 overscroll-none h-full md:px-10">
       <h1 className="text-5xl font-bold">Projekte</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 flex-grow overflow-y-scroll gap-4">
-        {projects.map((project) => (
-          <ProjectBox project={project} />
+        {projects.map((project, index) => (
+          <ProjectBox key={index} project={project} />
         ))}
       </div>
     </div>
