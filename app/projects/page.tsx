@@ -1,5 +1,5 @@
 import ProjectBox from "@/components/projects/project-box"
-import { ProjectType } from "./project-type"
+import { ProjectType } from "../../types/project-type"
 
 export default function Projects() {
   const projects: ProjectType[] = [

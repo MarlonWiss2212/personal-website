@@ -1,4 +1,4 @@
-export default function RoundedItem({ circumference, title, percent }: { circumference: number; title: string; percent: number }) {
+export default function SkillRoundedItem({ circumference, title, percent }: { circumference: number; title: string; percent: number }) {
   return (
     <div>
       <div className="inline-flex relative items-center justify-center overflow-hidden rounded-full">
