@@ -1,6 +1,4 @@
-"use client"
-
-import { Card, CardBody } from "@nextui-org/react"
+import { Card, CardBody } from "@nextui-org/card"
 
 export default function TimelineBox({ text, title }: { text: string; title: string }) {
   return (

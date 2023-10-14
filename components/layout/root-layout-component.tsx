@@ -1,6 +1,6 @@
 "use client"
 
-import { AcademicCapIcon, Bars3Icon, CodeBracketSquareIcon, DocumentTextIcon, FolderIcon, HomeIcon, RectangleStackIcon, XMarkIcon } from "@heroicons/react/24/outline"
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { usePathname } from "next/navigation"
 import { Inter } from "next/font/google"
 import { Dialog, Transition } from "@headlessui/react"
@@ -15,11 +15,11 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
 
   const pathname = usePathname()
   const navigation = [
-    { name: "Home", href: "/", icon: HomeIcon, current: pathname == "/" },
-    { name: "Lebenslauf", href: "/resume", icon: RectangleStackIcon, current: pathname.startsWith("/resume") },
-    { name: "Projekte", href: "/projects", icon: CodeBracketSquareIcon, current: pathname.startsWith("/projects") },
-    { name: "Über mich", href: "/about-me", icon: AcademicCapIcon, current: pathname.startsWith("/about-me") },
-    { name: "Kontakt", href: "/contact", icon: DocumentTextIcon, current: pathname.startsWith("/contact") },
+    { name: "Home", href: "/",current: pathname == "/" },
+    { name: "Lebenslauf", href: "/resume", current: pathname.startsWith("/resume") },
+    { name: "Projekte", href: "/projects", current: pathname.startsWith("/projects") },
+    { name: "Über mich", href: "/about-me", current: pathname.startsWith("/about-me") },
+    { name: "Kontakt", href: "/contact", current: pathname.startsWith("/contact") },
   ]
 
   return (
@@ -82,7 +82,10 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
             </div>
 
             <div className="sticky top-0 z-40 flex items-center gap-x-6 px-4 py-4 shadow-sm sm:px-6 lg:hidden">
-              <button type="button" className="-m-2.5 p-2.5 text-gray-400 lg:hidden" onClick={() => setSidebarOpen(true)}>
+              <button type="button" className="-m-2.5 p-2.5 text-gray-400 lg:hidden" onClick={() => {
+                console.log("open")
+                setSidebarOpen(true)
+              }}>
                 <span className="sr-only">Open sidebar</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </button>
@@ -97,7 +100,7 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
               </a>
             </div>
 
-            <main className="pt-10 lg:pl-72 h-0 flex-grow overscroll-none">
+            <main className="pt-14 lg:pl-72 h-0 flex-grow overscroll-none">
               <div className="px-4 sm:px-6 overscroll-none h-full">{children}</div>
             </main>
           </div>

@@ -14,6 +14,15 @@ const config: Config = {
   plugins: [
     nextui({
       defaultTheme: "dark",
+      themes: {
+        dark: {
+          colors: {
+            content1: {
+              DEFAULT: "#111111"
+            }
+          }
+        }
+      }
     }),
   ],
 }

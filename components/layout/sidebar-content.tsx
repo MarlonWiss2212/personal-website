@@ -4,18 +4,19 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function SidebarContent({ navigation }: { navigation: { name: string, href: string, icon: any, current: boolean }[]}) {
+export default function SidebarContent({ navigation }: { navigation: { name: string, href: string, current: boolean }[]}) {
   return (
-    <div className="flex grow flex-col gap-y-5 overflow-y-auto p-6 ring-1 bg-black ring-white/10">
-      <div className="flex shrink-0 gap-y-5 flex-col items-center">
+    <div className="flex flex-col justify-between lg:p-14">
+      <div className="flex shrink-0 flex-col items-start">
         <img
-          className="w-full h-auto rounded-full bg-gray-800"
+          className="w-32 h-auto rounded-md bg-gray-800"
           src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
           alt=""
         />
-        <span className='font-bold text-2xl pt-4'>Marlon Wißkirchen</span>
+        <span className='font-bold text-xl pt-4'>Marlon Wißkirchen</span>
+        <span className='text-gray-500'>marlon.wisskirchen@outlook.de</span>
       </div>
-      <nav className="flex flex-1 flex-col">
+      <nav className="flex flex-col justify-center">
         <ul role="list" className="-mx-2 space-y-1">
           {navigation.map((item) => (
             <li key={item.name}>
@@ -23,12 +24,11 @@ export default function SidebarContent({ navigation }: { navigation: { name: str
                 href={item.href}
                 className={classNames(
                   item.current
-                    ? 'bg-indigo-700 text-white'
-                    : 'text-gray-400 hover:text-white hover:bg-indigo-600',
-                  'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
+                    ? 'text-white'
+                    : 'text-gray-400 hover:text-white',
+                  'group flex gap-x-3 rounded-md p-2 text-2xl leading-6 font-bold'
                 )}
               >
-                <item.icon className="h-6 w-6 shrink-0" aria-hidden="true" />
                 {item.name}
               </Link>
             </li>

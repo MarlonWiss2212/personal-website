@@ -1,10 +1,9 @@
-"use client"
 import { ProjectType } from "@/types/project-type"
-import { Card, CardBody } from "@nextui-org/react"
+import { Card, CardBody } from "@nextui-org/card"
 
-export default function ProjectBox({ project }: { project: ProjectType }) {
+export default function ProjectBox({ project, className }: { project: ProjectType, className: string }) {
   return (
-    <Card className="max-h-52">
+    <Card className={className}>
       <CardBody className="flex flex-col justify-between">
         <div>
           <h3 className="font-bold text-xl">{project.title}</h3>
