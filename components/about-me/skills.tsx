@@ -1,3 +1,4 @@
+"use client"
 import SkillRoundedItem from "./skill-rounded-item"
 import { AccordionItem, Accordion } from "@nextui-org/accordion"
 
