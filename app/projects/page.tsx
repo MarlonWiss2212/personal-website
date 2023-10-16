@@ -3,16 +3,14 @@ import { ProjectType } from "../../types/project-type"
 
 export default function Projects() {
   const projects: ProjectType[] = [
-    { title: "Zewotherm Produktwelt App", message: "Nachricht 1", images: ["https://picsum.photos/200/300"], className: "" },
-    { title: "ChattyEvent", message: "ChattyEvent Api und Flutter App und Webseite", images: ["https://picsum.photos/200/300"], className: "md:col-span-2 row-span-2" },
-    { title: "Zewotherm Produktwelt App", message: "Nachricht 1", images: ["https://picsum.photos/200/300"], className: "" },
-    { title: "Zewotherm Produktwelt App", message: "Nachricht 1", images: ["https://picsum.photos/200/300"], className: "" },
-    { title: "Zewotherm Produktwelt App", message: "Nachricht 1", images: ["https://picsum.photos/200/300"], className: "" },
-    { title: "Zewotherm Produktwelt App", message: "Nachricht 1", images: ["https://picsum.photos/200/300"], className: "" },
-    { title: "Zewotherm Produktwelt App", message: "Nachricht 1", images: ["https://picsum.photos/200/300"], className: "" },
-    { title: "Zewotherm Produktwelt App", message: "Nachricht 1", images: ["https://picsum.photos/200/300"], className: "" },
-    { title: "Zewotherm Produktwelt App", message: "Nachricht 1", images: ["https://picsum.photos/200/300"], className: "" },
-
+    { title: "Zewotherm Produktwelt App", message: "Nachricht 1", images: ["/react-native.png", "/expo.png"], className: "" },
+    { 
+      title: "ChattyEvent", 
+      message: "ChattyEvent ist eine App die ich 2022 angefangen habe zu entwickeln um Partys mit Freunden zu planen. Die App basiert auf Flutter und holt die Daten über eine GraphQL Api bassierend auf NestJS von MongoDB und AWS. Die App habe ich ein Jahr später dann im Play- und App Store veröffentlicht", 
+      images: ["/flutter.png", "/nuxt.svg", "/nest-js.png", "/graphql.png", "/firebase-auth.png", "/mongodb.svg", "/aws-s3-icon.png"], 
+      className: "md:col-span-2 row-span-2" 
+    },
+    { title: "Personal Website", message: "Dies ist die Seite die sie gerade sehen. Sie bassiert auf NestJS in verbindung mit NextUI und wurde in Figma konzepiert", images: ["/next.svg"], className: "" },
   ]
 
   return (
