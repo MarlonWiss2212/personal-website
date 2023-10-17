@@ -6,7 +6,7 @@ function classNames(...classes: string[]) {
 
 export default function SidebarContent({ navigation }: { navigation: { name: string, href: string, current: boolean }[]}) {
   return (
-    <div className="flex flex-col justify-between bg-black lg:p-0 p-10">
+    <div className="flex flex-col justify-between bg-black md:p-0 p-10">
       <div className="flex shrink-0 flex-col items-start">
         <img
           className="w-32 h-auto rounded-md bg-gray-800"

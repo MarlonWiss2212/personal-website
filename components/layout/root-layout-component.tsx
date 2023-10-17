@@ -16,10 +16,10 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
   const pathname = usePathname()
   const navigation = [
     { name: "Home", href: "/",current: pathname == "/" },
-    { name: "Lebenslauf", href: "/resume", current: pathname.startsWith("/resume") },
-    { name: "Projekte", href: "/projects", current: pathname.startsWith("/projects") },
-    { name: "Über mich", href: "/about-me", current: pathname.startsWith("/about-me") },
-    { name: "Kontakt", href: "/contact", current: pathname.startsWith("/contact") },
+    { name: "Resume", href: "/resume", current: pathname.startsWith("/resume") },
+    { name: "Projects", href: "/projects", current: pathname.startsWith("/projects") },
+    { name: "About me", href: "/about-me", current: pathname.startsWith("/about-me") },
+    { name: "Contact", href: "/contact", current: pathname.startsWith("/contact") },
   ]
 
   return (
@@ -100,7 +100,7 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
               </a>
             </div>
 
-            <main className="h-0 flex-grow w-full overscroll-none">
+            <main className="h-0 flex-grow lg:h-full w-full overscroll-none">
               <div className="lg:pl-14 w-full overscroll-none h-full p-6 lg:p-0">{children}</div>
             </main>
           </div>

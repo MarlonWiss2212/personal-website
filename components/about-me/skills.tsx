@@ -8,12 +8,12 @@ export default function Skills() {
       <AccordionItem key={"1"} aria-label="Programmierkentnisse" title="Programmierkentnisse">
         <div className="p-4 w-full rounded-2xl flex flex-col gap-y-4">
         <div className="flex flex-row gap-2">
-            <h3 className="text-xl font-bold">Legende: </h3>
-            <Chip color="primary">Gute Erfahrung</Chip>
-            <Chip>Einfache Erfahrung</Chip>
+            <h3 className="text-xl font-bold">Legend: </h3>
+            <Chip color="primary">Good experience</Chip>
+            <Chip>Basic experience</Chip>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-bold">Programmiersprachen</h3>
+            <h3 className="text-xl font-bold">Coding languages</h3>
             <div className="flex flex-wrap gap-2">
               <Chip color="primary">Javascript</Chip>
               <Chip color="primary">Dart</Chip>
@@ -33,7 +33,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-bold">CrossPlatform</h3>
+            <h3 className="text-xl font-bold">Cross-Platform</h3>
             <div className="flex flex-wrap gap-2">
               <Chip color="primary">Flutter</Chip>
               <Chip color="primary">Ionic</Chip>
@@ -52,7 +52,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-bold">Datenbanken</h3>
+            <h3 className="text-xl font-bold">Databases</h3>
             <div className="flex flex-wrap gap-2">
               <Chip color="primary">MongoDB</Chip>
               <Chip color="primary">AWS S3</Chip>
@@ -69,7 +69,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-bold">Technologien / Plugins / anderes</h3>
+            <h3 className="text-xl font-bold">Technologies / plugins / other</h3>
             <div className="flex flex-wrap gap-2">
               <Chip color="primary">Tailwind-CSS</Chip>
               <Chip color="primary">Supabase</Chip>

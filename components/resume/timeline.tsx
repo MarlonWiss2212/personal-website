@@ -5,24 +5,24 @@ export default function Timeline() {
     <div className="flex flex-col flex-grow overflow-y-scroll text-white md:px-10 cursor-default lg:pb-14">
       <TimelineDateBox
         year="2019-2020"
-        text="Erste Erfahrungen beim Programmieren mit der Entwicklung eines 2D Spiels mit der Unity Game Engine. Das Spiel ist unter der Projekt-Seite als APK-Datei zu finden."
-        title="Erste Erfahrungen mit der Programmierung"
+        text="Initial experiences in programming by developing a 2D game using the Unity Game Engine"
+        title="Initial Programming Experiences"
         onRight={true}
       ></TimelineDateBox>
-      <TimelineDateBox year="2020" month="Januar" text="Aushilfe bei der Zewotherm GmbH. Bis zum Start der Ausbildung August 2021" title="Minijob als Aushilfe" onRight={false}></TimelineDateBox>
-      <TimelineDateBox year="2021" month="Juli" text="Erwerb der Mittleren Reifen an der IGS Remagen." title="Erwerb der Mittleren Reife" onRight={true}></TimelineDateBox>
+      <TimelineDateBox year="2020" month="January" text="Part-time work at Zewotherm GmbH. Continued until the start of german Ausbildung in August 2021." title="Part-Time Job as Assistant" onRight={false}></TimelineDateBox>
+      <TimelineDateBox year="2021" month="July" text="Achieved Middle maturity Certificate at IGS Remagen." title="Achievement of Middle maturity Certificate" onRight={true}></TimelineDateBox>
       <TimelineDateBox
         year="2021"
         month="August"
-        text="Start der Ausbildung als Fachinformatiker für Anwendungsentwicklung bei der Zewotherm GmbH. Voraussichtliches Ende der Ausbildung ist der 31.07.2024."
-        title="Ausbildung zum Anwendungsentwickler"
+        text="Commenced training as an application developer at Zewotherm GmbH. Expected completion of the german Ausbildung is on July 31, 2024."
+        title="German Ausbildung as an Application Developer (FIAE)"
         onRight={false}
       ></TimelineDateBox>
       <TimelineDateBox
         year="2023"
         month="August"
-        text="Nebenher zur Ausbildung habe ich ein Einzelunternehmen gegründet, um Apps mit Flutter für Android und iOS und Webseiten mit NuxtJs zu entwickeln und zu veröffentlichen. (Link zu dem App Store und zur Website sind unter der Projekt-Seite zu finden.)"
-        title="Gründung eines Einzelunternehmens"
+        text="In addition to the training, I established a sole proprietorship to develop and publish apps with Flutter for Android and iOS and websites with NuxtJs. (Links to the App Store and the website are available on the project page.)"
+        title="Establishment of a Sole Proprietorship"
         onRight={true}
       ></TimelineDateBox>
     </div>
