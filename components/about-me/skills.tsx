@@ -4,8 +4,8 @@ import { AccordionItem, Accordion } from "@nextui-org/accordion"
 
 export default function Skills() {
   return (
-    <Accordion defaultExpandedKeys={["1"]} variant="splitted">
-      <AccordionItem key={"1"} aria-label="Programmierkentnisse" title="Programmierkentnisse">
+    <Accordion variant="splitted">
+      <AccordionItem key={"1"} aria-label="programming knowledge" title="programming knowledge">
         <div className="p-4 w-full rounded-2xl flex flex-col gap-y-4">
         <div className="flex flex-row gap-2">
             <h3 className="text-xl font-bold">Legend: </h3>
