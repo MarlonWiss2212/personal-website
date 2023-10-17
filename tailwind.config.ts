@@ -19,7 +19,10 @@ const config: Config = {
           colors: {
             content1: {
               DEFAULT: "#111111"
-            }
+            },
+            primary: {
+              DEFAULT: "#6366f1"
+            },
           }
         }
       }

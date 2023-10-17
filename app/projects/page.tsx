@@ -16,7 +16,7 @@ export default function Projects() {
   return (
     <div className="flex flex-col gap-10 overscroll-none w-full h-full">
       <h1 className="text-5xl font-bold">Projekte</h1>
-      <div className="grid grid-cols-1 grid-flow-dense md:grid-cols-2 xl:grid-cols-3 flex-grow overflow-y-scroll gap-4">
+      <div className="grid grid-cols-1 grid-flow-dense md:grid-cols-2 xl:grid-cols-3 flex-grow overflow-y-scroll gap-4 lg:pb-14">
         {projects.map((project, index) => (
           <ProjectBox className={project.className} key={index} project={project} />
         ))}

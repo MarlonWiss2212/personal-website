@@ -26,7 +26,7 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
     <html lang="de" className="h-full">
       <body className={inter.className + " bg-black text-white"}>
         <Providers>
-          <div className="h-screen max-h-screen flex flex-col lg:flex-row lg:p-14">
+          <div className="h-screen max-h-screen flex flex-col lg:flex-row lg:px-14 lg:pt-14">
             <Transition.Root show={sidebarOpen} as={Fragment}>
               <Dialog as="div" className="relative z-50 lg:hidden" onClose={setSidebarOpen}>
                 <Transition.Child
@@ -77,7 +77,7 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
             </Transition.Root>
 
             {/* Static sidebar for desktop */}
-            <div className="hidden lg:flex lg:inset-y-0 lg:w-72 lg:flex-row">
+            <div className="hidden lg:pb-14 lg:flex lg:inset-y-0 lg:w-72 lg:flex-row">
               <SidebarContent navigation={navigation} />
             </div>
 

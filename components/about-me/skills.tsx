@@ -1,73 +1,79 @@
 "use client"
-import SkillRoundedItem from "./skill-rounded-item"
+import { Chip } from "@nextui-org/chip"
 import { AccordionItem, Accordion } from "@nextui-org/accordion"
 
 export default function Skills() {
-  const circumference = 35 * 2 * Math.PI
-
   return (
-    <Accordion variant="splitted">
-      <AccordionItem key="1" aria-label="Programmierkentnisse" title="Programmierkentnisse">
-        <div className="p-4 w-full rounded-2xl">
+    <Accordion defaultExpandedKeys={["1"]} variant="splitted">
+      <AccordionItem key={"1"} aria-label="Programmierkentnisse" title="Programmierkentnisse">
+        <div className="p-4 w-full rounded-2xl flex flex-col gap-y-4">
+        <div className="flex flex-row gap-2">
+            <h3 className="text-xl font-bold">Legende: </h3>
+            <Chip color="primary">Gute Erfahrung</Chip>
+            <Chip>Einfache Erfahrung</Chip>
+          </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold">Programmiersprachen</h3>
             <div className="flex flex-wrap gap-2">
-              <SkillRoundedItem circumference={circumference} percent={95} title="Java-script" />
-              <SkillRoundedItem circumference={circumference} percent={80} title="Dart" />
-              <SkillRoundedItem circumference={circumference} percent={70} title="Type-script" />
-              <SkillRoundedItem circumference={circumference} percent={30} title="Kotlin" />
-              <SkillRoundedItem circumference={circumference} percent={20} title="Java" />
+              <Chip color="primary">Javascript</Chip>
+              <Chip color="primary">Dart</Chip>
+              <Chip color="primary">Typescript</Chip>
+              <Chip>Kotlin</Chip>
+              <Chip>Java</Chip>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-bold">Frontend Frameworks</h3>
+            <h3 className="text-xl font-bold">Frontend</h3>
             <div className="flex flex-wrap gap-2">
-              <SkillRoundedItem circumference={circumference} percent={90} title="NuxtJS" />
-              <SkillRoundedItem circumference={circumference} percent={90} title="Vue" />
-              <SkillRoundedItem circumference={circumference} percent={65} title="Angular" />
-              <SkillRoundedItem circumference={circumference} percent={60} title="NextJS" />
-              <SkillRoundedItem circumference={circumference} percent={60} title="React" />
+              <Chip color="primary">NuxtJS</Chip>
+              <Chip color="primary">VueJS</Chip>
+              <Chip color="primary">NextJS</Chip>
+              <Chip>React</Chip>
+              <Chip>Angular</Chip>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-bold">Backend Frameworks</h3>
+            <h3 className="text-xl font-bold">CrossPlatform</h3>
             <div className="flex flex-wrap gap-2">
-              <SkillRoundedItem circumference={circumference} percent={90} title="NestJS" />
+              <Chip color="primary">Flutter</Chip>
+              <Chip color="primary">Ionic "Vue"</Chip>
+              <Chip>React-Native "Expo"</Chip>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-bold">CrossPlatform Frameworks</h3>
+            <h3 className="text-xl font-bold">Backend / API</h3>
             <div className="flex flex-wrap gap-2">
-              <SkillRoundedItem circumference={circumference} percent={100} title="Flutter" />
-              <SkillRoundedItem circumference={circumference} percent={90} title="Ionic(mit Vue)" />
-              <SkillRoundedItem circumference={circumference} percent={70} title="React-Native" />
+              <Chip color="primary">NestJS</Chip>
+              <Chip color="primary">REST Api</Chip>
+              <Chip color="primary">GraphQL Api</Chip>
+              <Chip color="primary">Node JS</Chip>
+              <Chip color="primary">ExpressJs</Chip>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-bold">Backend Technologien / Plugins / Datenbanken</h3>
+            <h3 className="text-xl font-bold">Datenbanken</h3>
             <div className="flex flex-wrap gap-2">
-              <SkillRoundedItem circumference={circumference} percent={95} title="MongoDB" />
-              <SkillRoundedItem circumference={circumference} percent={90} title="AWS S3" />
-              <SkillRoundedItem circumference={circumference} percent={90} title="NodeJS" />
-              <SkillRoundedItem circumference={circumference} percent={90} title="ExpressJs" />
-              <SkillRoundedItem circumference={circumference} percent={60} title="SQL" />
+              <Chip color="primary">MongoDB</Chip>
+              <Chip color="primary">AWS S3</Chip>
+              <Chip>Postgre SQL</Chip>
             </div>
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold">Hosting</h3>
             <div className="flex flex-wrap gap-2">
-              <SkillRoundedItem circumference={circumference} percent={85} title="Render" />
-              <SkillRoundedItem circumference={circumference} percent={85} title="Cloud-flare Pages" />
-              <SkillRoundedItem circumference={circumference} percent={80} title="Railway" />
-              <SkillRoundedItem circumference={circumference} percent={80} title="Heroku" />
+              <Chip color="primary">Render</Chip>
+              <Chip color="primary">Cloud-flare Pages</Chip>
+              <Chip color="primary">Railway</Chip>
+              <Chip color="primary">Heroku</Chip>
             </div>
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-bold">Technologien / Plugins / anderes</h3>
             <div className="flex flex-wrap gap-2">
-              <SkillRoundedItem circumference={circumference} percent={95} title="Tailwind-CSS" />
-              <SkillRoundedItem circumference={circumference} percent={85} title="Firebase" />
-              <SkillRoundedItem circumference={circumference} percent={45} title="Auth0" />
+              <Chip color="primary">Tailwind-CSS</Chip>
+              <Chip color="primary">Supabase</Chip>
+              <Chip color="primary">Firebase</Chip>
+              <Chip>Auth0</Chip>
             </div>
           </div>
         </div>      
