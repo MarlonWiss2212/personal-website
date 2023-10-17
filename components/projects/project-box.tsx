@@ -12,7 +12,7 @@ export default function ProjectBox({ project, className }: { project: ProjectTyp
         </div>
         <div className="flex flex-row gap-2 overscroll-x-auto">
           {project.images.map((image, index) => (
-            <Image key={index} width={40} height={40} src={image} alt="" className="w-10 h-10 p-1 rounded-md bg-white" />
+            <Image key={index} width={40} height={40} src={image} alt="" className="w-10 h-10 p-1 rounded-md bg-neutral-800" />
           ))}
         </div>
       </CardBody>
