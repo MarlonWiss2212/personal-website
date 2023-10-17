@@ -36,8 +36,9 @@ export default function Skills() {
             <h3 className="text-xl font-bold">CrossPlatform</h3>
             <div className="flex flex-wrap gap-2">
               <Chip color="primary">Flutter</Chip>
-              <Chip color="primary">Ionic "Vue"</Chip>
-              <Chip>React-Native "Expo"</Chip>
+              <Chip color="primary">Ionic</Chip>
+              <Chip>React-Native</Chip>
+              <Chip>React-Native Expo</Chip>
             </div>
           </div>
           <div className="flex flex-col gap-2">
