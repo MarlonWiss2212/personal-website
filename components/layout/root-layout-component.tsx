@@ -81,7 +81,7 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
               <SidebarContent navigation={navigation} />
             </div>
 
-            <div className="sticky top-0 z-40 flex items-center gap-x-6 px-4 py-4 shadow-sm sm:px-6 lg:hidden">
+            <div className="flex items-center gap-x-6 px-4 py-4 shadow-sm sm:px-6 lg:hidden">
               <button type="button" className="-m-2.5 p-2.5 text-gray-400 lg:hidden" onClick={() => {
                 console.log("open")
                 setSidebarOpen(true)
@@ -100,7 +100,7 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
               </a>
             </div>
 
-            <main className="h-full w-full overscroll-none">
+            <main className="h-0 flex-grow w-full overscroll-none">
               <div className="lg:pl-14 w-full overscroll-none h-full p-6 lg:p-0">{children}</div>
             </main>
           </div>
