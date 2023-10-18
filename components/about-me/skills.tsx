@@ -74,6 +74,7 @@ export default function Skills() {
               <Chip color="primary">Tailwind-CSS</Chip>
               <Chip color="primary">Supabase</Chip>
               <Chip color="primary">Firebase</Chip>
+              <Chip color="primary">Apache Kafka</Chip>
               <Chip>Auth0</Chip>
             </div>
           </div>
