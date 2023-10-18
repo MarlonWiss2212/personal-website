@@ -7,7 +7,7 @@ export default function Projects() {
     { 
       title: "ChattyEvent", 
       message: "ChattyEvent is an Mobile Cross-Platform app i developed starting fall 2022. The app is about planning events and parties with friends. It's developed with Flutter in the Frontend and NestJS, MongoDB and AWS S3 in the Backend. I used GraphQL instead of an REST API for more efficient requests. The App is currently in the google play store and the apple app store", 
-      images: ["/Flutter.png", "/nuxt.svg", "/nest-js.png", "/graphql.png", "/firebase-auth.png", "/mongodb.svg", "/aws-s3-icon.png"], 
+      images: ["/flutter.png", "/nuxt.svg", "/nest-js.png", "/graphql.png", "/firebase-auth.png", "/mongodb.svg", "/aws-s3-icon.png"], 
       className: "md:col-span-2 row-span-2" 
     },
     { title: "Personal Website", message: "This the website yopu currently see. It's developed with NextJS and NextUI as UI library. I designed it using Figma", images: ["/next.svg"], className: "" },
