@@ -1,0 +1,21 @@
+{
+  "page": {
+    "title": "Home",
+    "title1": "Hallo, mein Name ist",
+    "title2": "Marlon Wißkirchen",
+    "title3": "Ich bin Softwareentwickler",
+    "text": "Ich bin Softwareentwickler aus Rheinland-Pfalz, Deutschland."
+  },
+  "resume": {
+    "title": "Lebenslauf"
+  },
+  "projects": {
+    "title": "Projekte"
+  },
+  "aboutMe": {
+    "title": "Über mich"
+  },
+  "contact": {
+    "title": "Kontakt"
+  }
+}

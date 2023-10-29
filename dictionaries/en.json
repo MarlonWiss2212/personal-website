@@ -1,0 +1,21 @@
+{
+  "page": {
+    "title": "Home",
+    "title1": "Hi, my name is",
+    "title2": "Marlon Wißkirchen",
+    "title3": "I'm a software engineer",
+    "text": "I am a software engineer from Rhineland Palatinate, DE."
+  },
+  "resume": {
+    "title": "Resume"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "aboutMe": {
+    "title": "About me"
+  },
+  "contact": {
+    "title": "Contact"
+  }
+}
