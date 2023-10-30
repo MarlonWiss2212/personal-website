@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import RootLayoutComponent from "@/components/layout/root-layout-component"
 import { Inter } from "next/font/google"
 import { getDictionary } from "@/getDictionary"
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Marlon Wißkirchen",
@@ -15,6 +16,7 @@ export default async function RootLayout({ children, params }: { children: React
   return (
     <html lang={lang} className="h-full">
       <body className={inter.className + " bg-black text-white"}>
+        <Analytics />
         <RootLayoutComponent lang={lang}>{children}</RootLayoutComponent>
       </body>
     </html>

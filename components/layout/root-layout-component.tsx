@@ -6,6 +6,7 @@ import { Dialog, Transition } from "@headlessui/react"
 import { Fragment, useState } from "react"
 import SidebarContent from "@/components/layout/sidebar-content"
 import Providers from "./providers"
+import Image from "next/image"
 
 
 export default function RootLayoutComponent({ children, lang }: { children: React.ReactNode, lang: any }) {
@@ -87,10 +88,12 @@ export default function RootLayoutComponent({ children, lang }: { children: Reac
           <div className="flex-1 text-sm font-semibold leading-6 text-white"></div>
           <a href="#">
             <span className="sr-only">Marlon Wißkirchen</span>
-            <img
-              className="h-8 w-8 rounded-full bg-gray-800"
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt=""
+            <Image
+              width={32}
+              height={32}
+              className="rounded-md bg-gray-800"
+              src="/marlon_photo.jpg"
+              alt='profile picture'
             />
           </a>
         </div>

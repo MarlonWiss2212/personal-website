@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 function classNames(...classes: string[]) {
@@ -8,10 +9,12 @@ export default function SidebarContent({ navigation }: { navigation: { name: str
   return (
     <div className="flex flex-col justify-between bg-black lg:p-0 p-10">
       <div className="flex shrink-0 flex-col items-start">
-        <img
-          className="w-32 h-auto rounded-md bg-gray-800"
-          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          alt=""
+        <Image
+          width={128}
+          height={128}
+          className="h-auto rounded-md bg-gray-800"
+          src="/marlon_photo.jpg"
+          alt='profile picture'
         />
         <span className='font-bold text-xl pt-4'>Marlon Wißkirchen</span>
         <span className='text-gray-500'>marlon.wisskirchen@outlook.de</span>
