@@ -13,11 +13,11 @@ export default function RootLayoutComponent({ children, lang, langCode }: { chil
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const pathname = usePathname()
   const navigation = [
-    { name: lang.page.title, href: "/",current: pathname == "/" },
-    { name: lang.resume.title, href: langCode + "/resume", current: pathname.startsWith("/resume") },
-    { name: lang.projects.title, href: langCode + "/projects", current: pathname.startsWith("/projects") },
-    { name: lang.aboutMe.title, href: langCode + "/about-me", current: pathname.startsWith("/about-me") },
-    { name: lang.contact.title, href: langCode + "/contact", current: pathname.startsWith("/contact") },
+    { name: lang.page.title, href: `/`,current: pathname == "/" },
+    { name: lang.resume.title, href: `/${langCode}/resume`, current: pathname.startsWith(`/${langCode}/resume`) },
+    { name: lang.projects.title, href: `/${langCode}/projects`, current: pathname.startsWith(`/${langCode}/projects`) },
+    { name: lang.aboutMe.title, href: `/${langCode}/about-me`, current: pathname.startsWith(`/${langCode}/about-me`) },
+    { name: lang.contact.title, href: `/${langCode}/contact`, current: pathname.startsWith(`/${langCode}/contact`) },
   ]
 
   return (
