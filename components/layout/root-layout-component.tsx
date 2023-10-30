@@ -9,15 +9,15 @@ import Providers from "./providers"
 import Image from "next/image"
 
 
-export default function RootLayoutComponent({ children, lang }: { children: React.ReactNode, lang: any }) {
+export default function RootLayoutComponent({ children, lang, langCode }: { children: React.ReactNode, lang: any, langCode: string }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const pathname = usePathname()
   const navigation = [
     { name: lang.page.title, href: "/",current: pathname == "/" },
-    { name: lang.resume.title, href: "/resume", current: pathname.startsWith("/resume") },
-    { name: lang.projects.title, href: "/projects", current: pathname.startsWith("/projects") },
-    { name: lang.aboutMe.title, href: "/about-me", current: pathname.startsWith("/about-me") },
-    { name: lang.contact.title, href: "/contact", current: pathname.startsWith("/contact") },
+    { name: lang.resume.title, href: langCode + "/resume", current: pathname.startsWith("/resume") },
+    { name: lang.projects.title, href: langCode + "/projects", current: pathname.startsWith("/projects") },
+    { name: lang.aboutMe.title, href: langCode + "/about-me", current: pathname.startsWith("/about-me") },
+    { name: lang.contact.title, href: langCode + "/contact", current: pathname.startsWith("/contact") },
   ]
 
   return (

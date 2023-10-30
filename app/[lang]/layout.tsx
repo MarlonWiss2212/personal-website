@@ -20,7 +20,7 @@ export default async function RootLayout({ children, params }: { children: React
       </head>
       <body className={inter.className + " bg-black text-white"}>
         <Analytics />
-        <RootLayoutComponent lang={lang}>{children}</RootLayoutComponent>
+        <RootLayoutComponent langCode={params.lang} lang={lang}>{children}</RootLayoutComponent>
       </body>
     </html>
   )
