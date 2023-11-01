@@ -6,10 +6,6 @@ import { Analytics } from "@vercel/analytics/react"
 import { NextIntlClientProvider } from "next-intl"
 import {notFound} from 'next/navigation';
 
-export function generateStaticParams() {
-  return [{locale: 'en'}, {locale: 'de'}];
-}
-
 export const metadata: Metadata = {
   title: "Marlon Wißkirchen",
 }
