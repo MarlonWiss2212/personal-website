@@ -1,11 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { Dispatch, SetStateAction } from 'react'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function SidebarContent({ navigation }: { navigation: { name: string, href: string, current: boolean }[] }) {
+export default function SidebarContent(
+  { navigation, setSidebarOpen }: { navigation: { name: string, href: string, current: boolean }[], setSidebarOpen: Dispatch<SetStateAction<boolean>> }
+) {
   return (
     <div className="flex flex-col justify-between bg-black lg:p-0 p-10">
       <div className="flex shrink-0 flex-col items-start">
@@ -24,6 +27,7 @@ export default function SidebarContent({ navigation }: { navigation: { name: str
           {navigation.map((item) => (
             <li key={item.name}>
               <Link
+                onClick={() => setSidebarOpen(false)}
                 href={item.href}
                 className={classNames(
                   item.current

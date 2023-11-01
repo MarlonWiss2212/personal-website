@@ -1,6 +1,5 @@
-import { I18NConfig } from "next/dist/server/config-shared";
+import { getRequestConfig } from 'next-intl/server';
 
-export const i18n: I18NConfig = {
-  locales: ["en", "de"],
-  defaultLocale: "de",
-}
+export default getRequestConfig(async ({locale}: {locale:string}) => ({
+  messages: (await import(`./messages/${locale}.json`)).default
+}));

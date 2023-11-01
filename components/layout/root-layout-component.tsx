@@ -5,23 +5,29 @@ import { usePathname } from "next/navigation"
 import { Dialog, Transition } from "@headlessui/react"
 import { Fragment, useState } from "react"
 import SidebarContent from "@/components/layout/sidebar-content"
-import Providers from "./providers"
 import Image from "next/image"
+import { NextUIProvider } from "@nextui-org/react"
+import { useTranslations, useLocale } from "next-intl"
 
+const transformLocale = (locale: string): string => {
+  return locale == "en" ? "/" : `/${locale}/`
+}
 
-export default function RootLayoutComponent({ children, lang, langCode }: { children: React.ReactNode, lang: any, langCode: string }) {
+export default function RootLayoutComponent({ children }: { children: React.ReactNode }) {
+  const t = useTranslations()
+  const locale = useLocale()
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const pathname = usePathname()
   const navigation = [
-    { name: lang.page.title, href: `/`,current: pathname == "/" },
-    { name: lang.resume.title, href: `/${langCode}/resume`, current: pathname.startsWith(`/${langCode}/resume`) },
-    { name: lang.projects.title, href: `/${langCode}/projects`, current: pathname.startsWith(`/${langCode}/projects`) },
-    { name: lang.aboutMe.title, href: `/${langCode}/about-me`, current: pathname.startsWith(`/${langCode}/about-me`) },
-    { name: lang.contact.title, href: `/${langCode}/contact`, current: pathname.startsWith(`/${langCode}/contact`) },
+    { name: t("page.title"), href: `/`,current: pathname == transformLocale(locale) },
+    { name: t("resume.title"), href: `${transformLocale(locale)}resume`, current: pathname.startsWith(`${transformLocale(locale)}resume`) },
+    { name: t("projects.title"), href: `${transformLocale(locale)}projects`, current: pathname.startsWith(`${transformLocale(locale)}projects`) },
+    { name: t("aboutMe.title"), href: `${transformLocale(locale)}about-me`, current: pathname.startsWith(`${transformLocale(locale)}about-me`) },
+    { name: t("contact.title"), href: `${transformLocale(locale)}contact`, current: pathname.startsWith(`${transformLocale(locale)}contact`) },
   ]
 
   return (
-    <Providers>
+    <NextUIProvider>
       <div className="h-screen max-h-screen flex flex-col lg:flex-row lg:px-14 lg:pt-14">
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog as="div" className="relative z-50 lg:hidden" onClose={setSidebarOpen}>
@@ -65,7 +71,7 @@ export default function RootLayoutComponent({ children, lang, langCode }: { chil
                     </div>
                   </Transition.Child>
                   {/* Sidebar component, swap this element with another sidebar if you like */}
-                  <SidebarContent navigation={navigation} />
+                  <SidebarContent setSidebarOpen={setSidebarOpen} navigation={navigation} />
                 </Dialog.Panel>
               </Transition.Child>
             </div>
@@ -74,12 +80,11 @@ export default function RootLayoutComponent({ children, lang, langCode }: { chil
 
         {/* Static sidebar for desktop */}
         <div className="hidden lg:pb-14 lg:flex lg:inset-y-0 lg:w-72 lg:flex-row">
-          <SidebarContent navigation={navigation} />
+          <SidebarContent setSidebarOpen={setSidebarOpen} navigation={navigation} />
         </div>
 
         <div className="flex items-center gap-x-6 px-4 py-4 shadow-sm sm:px-6 lg:hidden">
           <button type="button" className="-m-2.5 p-2.5 text-gray-400 lg:hidden" onClick={() => {
-            console.log("open")
             setSidebarOpen(true)
           }}>
             <span className="sr-only">Open sidebar</span>
@@ -102,6 +107,6 @@ export default function RootLayoutComponent({ children, lang, langCode }: { chil
           <div className="lg:pl-14 w-full overscroll-none h-full p-6 lg:p-0">{children}</div>
         </main>
       </div>
-    </Providers>
+    </NextUIProvider>  
   )
 }

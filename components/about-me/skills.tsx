@@ -19,6 +19,7 @@ export default function Skills() {
               <Chip color="primary">Dart</Chip>
               <Chip color="primary">Typescript</Chip>
               <Chip>Kotlin</Chip>
+              <Chip>Python</Chip>
               <Chip>Java</Chip>
             </div>
           </div>
