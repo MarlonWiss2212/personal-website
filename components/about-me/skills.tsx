@@ -64,7 +64,7 @@ export default function Skills() {
             <h3 className="text-xl font-bold">Hosting</h3>
             <div className="flex flex-wrap gap-2">
               <Chip color="primary">Render</Chip>
-              <Chip color="primary">Cloud-flare Pages</Chip>
+              <Chip color="primary">Cloudflare Pages</Chip>
               <Chip color="primary">Railway</Chip>
               <Chip color="primary">Heroku</Chip>
             </div>
@@ -75,7 +75,7 @@ export default function Skills() {
               <Chip color="primary">Tailwind-CSS</Chip>
               <Chip color="primary">Supabase</Chip>
               <Chip color="primary">Firebase</Chip>
-              <Chip color="primary">Apache Kafka</Chip>
+              <Chip>Apache Kafka</Chip>
               <Chip>Auth0</Chip>
             </div>
           </div>

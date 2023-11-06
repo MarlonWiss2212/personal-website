@@ -5,7 +5,7 @@ export default function Timeline() {
     <div className="flex flex-col flex-grow overflow-y-scroll text-white md:px-10 cursor-default lg:pb-14">
       <TimelineDateBox
         year="2019-2020"
-        text="Initial experiences in programming by developing a 2D game using the Unity Game Engine"
+        text="Initial experiences in programming by developing a 2D game using the Unity Game Engine and first experience with Javascript and Web Development"
         title="Initial Programming Experiences"
         onRight={true}
       ></TimelineDateBox>
