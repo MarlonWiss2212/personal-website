@@ -1,6 +1,5 @@
 "use client"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
-import { usePathname } from "next/navigation"
 import { Dialog, Transition } from "@headlessui/react"
 import { Fragment, useState } from "react"
 import SidebarContent from "@/components/layout/sidebar-content"
@@ -8,22 +7,8 @@ import Image from "next/image"
 import { NextUIProvider } from "@nextui-org/react"
 import { useTranslations, useLocale } from "next-intl"
 
-const transformLocale = (locale: string): string => {
-  return locale == "en" ? "/" : `/${locale}/`
-}
-
 export default function RootLayoutComponent({ children }: { children: React.ReactNode }) {
-  const t = useTranslations()
-  const locale = useLocale()
   const [sidebarOpen, setSidebarOpen] = useState(false)
-  const pathname = usePathname()
-  const navigation = [
-    { name: t("page.title"), href: transformLocale(locale), current: pathname == transformLocale(locale) },
-    { name: t("resume.title"), href: `${transformLocale(locale)}resume`, current: pathname.startsWith(`${transformLocale(locale)}resume`) },
-    { name: t("projects.title"), href: `${transformLocale(locale)}projects`, current: pathname.startsWith(`${transformLocale(locale)}projects`) },
-    { name: t("aboutMe.title"), href: `${transformLocale(locale)}about-me`, current: pathname.startsWith(`${transformLocale(locale)}about-me`) },
-    { name: t("contact.title"), href: `${transformLocale(locale)}contact`, current: pathname.startsWith(`${transformLocale(locale)}contact`) },
-  ]
 
   return (
     <NextUIProvider>
@@ -70,7 +55,7 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
                     </div>
                   </Transition.Child>
                   {/* Sidebar component, swap this element with another sidebar if you like */}
-                  <SidebarContent setSidebarOpen={setSidebarOpen} navigation={navigation} />
+                  <SidebarContent setSidebarOpen={setSidebarOpen} />
                 </Dialog.Panel>
               </Transition.Child>
             </div>
@@ -79,7 +64,7 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
 
         {/* Static sidebar for desktop */}
         <div className="hidden lg:pb-14 lg:flex lg:inset-y-0 lg:w-72 lg:flex-row">
-          <SidebarContent setSidebarOpen={setSidebarOpen} navigation={navigation} />
+          <SidebarContent setSidebarOpen={setSidebarOpen} />
         </div>
 
         <div className="flex items-center gap-x-6 px-4 py-4 shadow-sm sm:px-6 lg:hidden">
