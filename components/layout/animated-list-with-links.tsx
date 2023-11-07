@@ -5,8 +5,12 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Dispatch, SetStateAction } from "react"
 
-const transformLocale = (locale: string): string => {
-  return locale == "en" ? "/" : `/${locale}/`
+const transformLocale = (locale: string, withEndingSlash: boolean = true): string => {
+  if (locale == "en") {
+    return withEndingSlash ? "/" : ""
+  } else {
+    return withEndingSlash ? `/${locale}/` : `/${locale}`
+  }
 }
 
 function classNames(...classes: string[]) {
@@ -19,7 +23,7 @@ export default function AnimatedListWithLinks({ setSidebarOpen }: { setSidebarOp
 
   const pathname = usePathname()
   const navigation = [
-    { name: t("page.title"), href: transformLocale(locale), current: pathname == transformLocale(locale) },
+    { name: t("page.title"), href: transformLocale(locale, false), current: pathname == transformLocale(locale) },
     { name: t("resume.title"), href: `${transformLocale(locale)}resume`, current: pathname.startsWith(`${transformLocale(locale)}resume`) },
     { name: t("projects.title"), href: `${transformLocale(locale)}projects`, current: pathname.startsWith(`${transformLocale(locale)}projects`) },
     { name: t("aboutMe.title"), href: `${transformLocale(locale)}about-me`, current: pathname.startsWith(`${transformLocale(locale)}about-me`) },
@@ -33,7 +37,6 @@ export default function AnimatedListWithLinks({ setSidebarOpen }: { setSidebarOp
         x: 0,
         transition: {
           duration: duration,
-          delay: 0.3,
         },
       },
     }
