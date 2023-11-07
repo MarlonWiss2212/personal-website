@@ -30,23 +30,23 @@
     "timeline": {
       "box1": {
         "title": "Erste Programmiererfahrungen",
-        "description": "Erste Erfahrungen in der Programmierung durch die Entwicklung eines 2D-Spiels mit der Unity Game Engine und erste Erfahrungen mit Javascript und Webentwicklung."
+        "description": "Bereits im Alter von 12 Jahren interessierte ich mich für das Programmieren und eignete mir grundlegende Kenntnisse im Webentwicklungsbereich an, indem ich mir HTML, CSS und JavaScript selbst beibrachte. Mit 14 Jahren begann ich außerdem, erste Erfahrungen in der Android-Plattform zu sammeln und entwickelte mit Kotlin eine Chat-App für Android. Während der Pandemie im Jahr 2020 erstellte ich außerdem ein Spiel mithilfe der Unity Game Engine und C#."
       },
       "box2": {
         "title": "Teilzeitjob als Assistent",
-        "description": "Teilzeitbeschäftigung bei Zewotherm GmbH. Fortgesetzt bis zum Beginn der deutschen Ausbildung im August 2021."
+        "description": "Im Alter von 15 Jahren begann ich neben der Schule als Aushilfe bei der Zewotherm GmbH zu arbeiten. Diese Tätigkeit führte ich bis zum Beginn meiner Ausbildung im August 2021 fort."
       },
       "box3": {
-        "title": "Erwerb des Mittlere-Reife",
-        "description": "Mittlere Reife an der IGS Remagen erreicht."
+        "title": "Erwerb der Mittleren Reife",
+        "description": "Im Sommer 2021 erlangte ich meinen Mittleren Schulabschluss an der IGS Remagen, bevor ich meine Ausbildung begann."
       },
       "box4": {
         "title": "Ausbildung als Anwendungsentwickler (FIAE)",
-        "description": "Beginn der Ausbildung als Anwendungsentwickler bei Zewotherm GmbH. Voraussichtlicher Abschluss der Ausbildung am 31. Juli 2024."
+        "description": "Meine Ausbildung als Anwendungsentwickler (FIAE) habe ich bei der Zewotherm GmbH begonnen und werde voraussichtlich im Sommer 2024 abschließen. Während meiner Ausbildung konnte ich meine Kenntnisse im Bereich Webentwicklung erheblich erweitern. Darüber hinaus sammelte ich wertvolle Erfahrungen im Bereich Mobile Development."
       },
       "box5": {
         "title": "Entwicklung einer Flutter-App neben der Ausbildung",
-        "description": "Zusätzlich zur Ausbildung habe ich Apps mit Flutter für Android und iOS entwickelt und veröffentlicht sowie Websites mit NuxtJs erstellt."
+        "description": "Da ich mein Wissen kontinuierlich vertiefen möchte, entwickelte ich neben meiner Ausbildung Apps mit Flutter. Diese Apps habe ich in Verbindung mit NestJS-Backends, MongoDB, Apache Kafka und vielen anderen Tools entwickelt und veröffentlicht."
       }
     }
   },

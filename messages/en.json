@@ -29,26 +29,27 @@
     "title": "Resume",
     "timeline": {
       "box1": {
-        "title": "Initial Programming Experiences",
-        "description": "Initial experiences in programming by developing a 2D game using the Unity Game Engine and first experience with Javascript and Web Development"
+        "title": "First Programming Experiences",
+        "description": "I became interested in programming at the age of 12 and acquired basic skills in web development by teaching myself HTML, CSS, and JavaScript. At the age of 14, I also started gaining initial experiences with the Android platform and developed a Chat App for Android using Kotlin. Additionally, during the 2020 pandemic, I developed a game using the Unity Game Engine and C#."
       },
       "box2": {
-        "title": "Part-Time Job as Assistant",
-        "description": "Part-time work at Zewotherm GmbH. Continued until the start of german Ausbildung in August 2021."
+        "title": "Part-Time Job as an Assistant",
+        "description": "At the age of 15, I began working part-time at Zewotherm GmbH alongside my school. I continued this job until the start of my apprenticeship in August 2021."
       },
       "box3": {
-        "title": "Achievement of Middle maturity Certificate",
-        "description": "Achieved Middle maturity Certificate at IGS Remagen."
+        "title": "Attainment of Middle School Certificate",
+        "description": "I obtained my Middle School Certificate in the summer of 2021 from IGS Remagen before commencing my apprenticeship."
       },
       "box4": {
-        "title": "German Ausbildung as an Application Developer (FIAE)",
-        "description": "Commenced training as an application developer at Zewotherm GmbH. Expected completion of the german Ausbildung is on July 31, 2024."
+        "title": "Apprenticeship as an Application Developer (FIAE)",
+        "description": "I began my apprenticeship as an Application Developer (FIAE) at Zewotherm GmbH and am expected to complete it in the summer of 2024. During my apprenticeship, I significantly expanded my knowledge in web development and gained valuable experience in the field of Mobile Development."
       },
       "box5": {
-        "title": "Development of Flutter App besides the German Ausbildung",
-        "description": "In addition to the training, I developed and publish apps with Flutter for Android and iOS and websites with NuxtJs"
+        "title": "Development of a Flutter App alongside Apprenticeship",
+        "description": "In my pursuit of continuous knowledge expansion, I developed apps with Flutter alongside my apprenticeship. These apps were created in conjunction with NestJS backends, MongoDB, Apache Kafka, and various other tools, and I successfully published them."
       }
     }
+    
   },
   "projects": {
     "title": "Projects"
