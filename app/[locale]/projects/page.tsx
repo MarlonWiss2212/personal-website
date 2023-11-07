@@ -1,5 +1,6 @@
 import ProjectBox from "@/components/projects/project-box"
 import { ProjectType } from "../../../types/project-type"
+import AnimatedTitle from "@/components/general/animated-title"
 
 export default function Projects() {
   const projects: ProjectType[] = [
@@ -16,7 +17,7 @@ export default function Projects() {
 
   return (
     <div className="flex flex-col gap-10 overscroll-none w-full h-full md:px-10 lg:pb-14">
-      <h1 className="text-5xl font-bold">Projects</h1>
+      <AnimatedTitle className="text-5xl font-bold">Projects</AnimatedTitle>
       <div className="grid grid-cols-1 grid-flow-dense md:grid-cols-2 xl:grid-cols-3 flex-grow overflow-y-scroll gap-4 lg:pb-14">
         {projects.map((project, index) => (
           <ProjectBox className={project.className} key={index} project={project} />
