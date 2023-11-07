@@ -1,14 +1,18 @@
+"use client"
 import { Card, CardBody } from "@nextui-org/card"
+import { motion } from "framer-motion"
 
-export default function TimelineBox({ text, title }: { text: string; title: string }) {
+export default function TimelineBox({ text, title, onRight }: { text: string; title: string; onRight: boolean }) {
   return (
-    <Card className="w-2/5 self-center hover:scale-105 duration-150">
-      <CardBody className="flex flex-col w-full rounded-lg shadow px-4 py-5">
-        <div className=" mb-2 flex justify-between">
-          <h3 className="font-bold">{title}</h3>
-        </div>
-        <p>{text}</p>
-      </CardBody>
-    </Card>
+    <motion.div className="w-2/5 self-center" initial={{ scaleX: 0, x: onRight ? -300 : 300 }} whileInView={{ scaleX: 1, x: 0, transition: { duration: 0.4 } }}>
+      <Card>
+        <CardBody className="flex flex-col w-full rounded-lg shadow px-4 py-5">
+          <div className=" mb-2 flex justify-between">
+            <h3 className="font-bold">{title}</h3>
+          </div>
+          <p>{text}</p>
+        </CardBody>
+      </Card>
+    </motion.div>
   )
 }

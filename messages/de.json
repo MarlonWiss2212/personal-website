@@ -1,13 +1,49 @@
 {
+  "month": {
+    "january": "Januar",
+    "february": "Februar",
+    "march": "März",
+    "april": "April",
+    "may": "Mai",
+    "june": "Juni",
+    "july": "Juli",
+    "august": "August",
+    "september": "September",
+    "october": "Oktober",
+    "november": "November",
+    "december": "Dezember"
+  },
   "page": {
     "title": "Home",
     "title1": "Hallo, mein Name ist",
     "title2": "Marlon Wißkirchen",
     "title3": "Ich bin Softwareentwickler",
-    "text": "Ich bin Softwareentwickler aus Rheinland-Pfalz, Deutschland."
+    "text": "Ich bin ein Softwareentwickler aus Rheinland-Pfalz, Deutschland."
   },
   "resume": {
-    "title": "Lebenslauf"
+    "title": "Lebenslauf",
+    "timeline": {
+      "box1": {
+        "title": "Erste Programmiererfahrungen",
+        "description": "Erste Erfahrungen in der Programmierung durch die Entwicklung eines 2D-Spiels mit der Unity Game Engine und erste Erfahrungen mit Javascript und Webentwicklung."
+      },
+      "box2": {
+        "title": "Teilzeitjob als Assistent",
+        "description": "Teilzeitbeschäftigung bei Zewotherm GmbH. Fortgesetzt bis zum Beginn der deutschen Ausbildung im August 2021."
+      },
+      "box3": {
+        "title": "Erwerb des Mittlere-Reife",
+        "description": "Mittlere Reife an der IGS Remagen erreicht."
+      },
+      "box4": {
+        "title": "Ausbildung als Anwendungsentwickler (FIAE)",
+        "description": "Beginn der Ausbildung als Anwendungsentwickler bei Zewotherm GmbH. Voraussichtlicher Abschluss der Ausbildung am 31. Juli 2024."
+      },
+      "box5": {
+        "title": "Entwicklung einer Flutter-App neben der Ausbildung",
+        "description": "Zusätzlich zur Ausbildung habe ich Apps mit Flutter für Android und iOS entwickelt und veröffentlicht sowie Websites mit NuxtJs erstellt."
+      }
+    }
   },
   "projects": {
     "title": "Projekte"

@@ -1,5 +1,4 @@
 "use client"
-
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { usePathname } from "next/navigation"
 import { Dialog, Transition } from "@headlessui/react"
@@ -19,7 +18,7 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const pathname = usePathname()
   const navigation = [
-    { name: t("page.title"), href: `/`,current: pathname == transformLocale(locale) },
+    { name: t("page.title"), href: transformLocale(locale), current: pathname == transformLocale(locale) },
     { name: t("resume.title"), href: `${transformLocale(locale)}resume`, current: pathname.startsWith(`${transformLocale(locale)}resume`) },
     { name: t("projects.title"), href: `${transformLocale(locale)}projects`, current: pathname.startsWith(`${transformLocale(locale)}projects`) },
     { name: t("aboutMe.title"), href: `${transformLocale(locale)}about-me`, current: pathname.startsWith(`${transformLocale(locale)}about-me`) },
@@ -84,22 +83,20 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
         </div>
 
         <div className="flex items-center gap-x-6 px-4 py-4 shadow-sm sm:px-6 lg:hidden">
-          <button type="button" className="-m-2.5 p-2.5 text-gray-400 lg:hidden" onClick={() => {
-            setSidebarOpen(true)
-          }}>
+          <button
+            type="button"
+            className="-m-2.5 p-2.5 text-gray-400 lg:hidden"
+            onClick={() => {
+              setSidebarOpen(true)
+            }}
+          >
             <span className="sr-only">Open sidebar</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
           <div className="flex-1 text-sm font-semibold leading-6 text-white"></div>
           <a href="#">
             <span className="sr-only">Marlon Wißkirchen</span>
-            <Image
-              width={32}
-              height={32}
-              className="rounded-md bg-gray-800"
-              src="/marlon_photo.jpg"
-              alt='profile picture'
-            />
+            <Image width={32} height={32} className="rounded-md bg-gray-800" src="/marlon_photo.jpg" alt="profile picture" />
           </a>
         </div>
 
@@ -107,6 +104,6 @@ export default function RootLayoutComponent({ children }: { children: React.Reac
           <div className="lg:pl-14 w-full overscroll-none h-full p-6 lg:p-0">{children}</div>
         </main>
       </div>
-    </NextUIProvider>  
+    </NextUIProvider>
   )
 }
