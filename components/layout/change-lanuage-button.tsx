@@ -19,7 +19,7 @@ export default function ChangeLanguageButton() {
   }
 
   return (
-    <Select size="sm" selectedKeys={[locale]} label={t("title")} selectionMode="single" value={locale} onChange={handleChange} startContent={getFlagComponent(locale)}>
+    <Select color="default" size="sm" selectedKeys={[locale]} label={t("title")} selectionMode="single" value={locale} onChange={handleChange} startContent={getFlagComponent(locale)}>
       <SelectItem value={"en"} key="en" startContent={getFlagComponent("en")} className="flex justify-between">
         {t("english")}
       </SelectItem>

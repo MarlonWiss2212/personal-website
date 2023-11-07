@@ -17,6 +17,10 @@ const config: Config = {
       themes: {
         dark: {
           colors: {
+            default: {
+              50: "#111111",
+              100: "#111111",
+            },            
             content1: {
               DEFAULT: "#111111"
             },
