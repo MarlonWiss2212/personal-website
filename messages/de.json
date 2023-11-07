@@ -1,4 +1,9 @@
 {
+  "language": {
+    "title": "Sprache",
+    "english": "Englisch",
+    "german": "Deutsch"
+  },
   "month": {
     "january": "Januar",
     "february": "Februar",

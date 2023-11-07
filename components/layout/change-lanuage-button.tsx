@@ -1,7 +1,8 @@
 import { Select, SelectItem } from "@nextui-org/select"
-import { useLocale } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
-import { usePathname, useRouter } from "next/navigation"
+import { useRouter, usePathname } from "next-intl/client"
+import { ChangeEvent } from "react"
 
 const getFlagComponent = (locale: string) => {
   return <Image width={24} height={24} src={`/language/${locale}.png`} alt={`${locale == "en" ? "english" : "german"} flag`} />
@@ -9,16 +10,21 @@ const getFlagComponent = (locale: string) => {
 
 export default function ChangeLanguageButton() {
   const locale = useLocale()
+  const t = useTranslations("language")
   const pathname = usePathname()
   const router = useRouter()
 
+  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    router.replace(pathname, { locale: e.target.value })
+  }
+
   return (
-    <Select value={locale} startContent={getFlagComponent(locale)}>
+    <Select size="sm" selectedKeys={[locale]} label={t("title")} selectionMode="single" value={locale} onChange={handleChange} startContent={getFlagComponent(locale)}>
       <SelectItem value={"en"} key="en" startContent={getFlagComponent("en")} className="flex justify-between">
-        English
+        {t("english")}
       </SelectItem>
       <SelectItem value={"de"} key="de" startContent={getFlagComponent("de")} className="flex justify-between">
-        Deutsch
+        {t("german")}
       </SelectItem>
     </Select>
   )
