@@ -1,9 +1,11 @@
 import AnimatedTitle from "@/components/general/animated-title"
+import { useTranslations } from "next-intl"
 
 export default function Contact() {
+  const t = useTranslations("contact")
   return (
     <div className="flex flex-col gap-10 overscroll-none h-full md:px-10 lg:pb-14">
-      <AnimatedTitle className="text-5xl font-bold">Contact</AnimatedTitle>
+      <AnimatedTitle className="text-5xl font-bold">{t("title")}</AnimatedTitle>
       <div className="flex flex-col gap-y-8">
         {/** E-Mail */}
         <div className="flex flex-row items-center gap-x-4">

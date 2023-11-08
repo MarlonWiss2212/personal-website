@@ -5,9 +5,10 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Dispatch, SetStateAction } from "react"
 
+// english always has a slash
 const transformLocale = (locale: string, withEndingSlash: boolean = true): string => {
   if (locale == "en") {
-    return withEndingSlash ? "/" : ""
+    return "/"
   } else {
     return withEndingSlash ? `/${locale}/` : `/${locale}`
   }
@@ -22,6 +23,7 @@ export default function AnimatedListWithLinks({ setSidebarOpen }: { setSidebarOp
   const locale = useLocale()
 
   const pathname = usePathname()
+  console.log(pathname)
   const navigation = [
     { name: t("page.title"), href: transformLocale(locale), current: pathname == transformLocale(locale, false) },
     { name: t("resume.title"), href: `${transformLocale(locale)}resume`, current: pathname.startsWith(`${transformLocale(locale)}resume`) },

@@ -23,7 +23,7 @@
     "title1": "Hi, my name is",
     "title2": "Marlon Wißkirchen",
     "title3": "I'm a software engineer",
-    "text": "I am a software engineer from Rhineland Palatinate, DE."
+    "text": "I am an 18 year old software engineer from Rhineland-Palatinate, Germany."
   },
   "resume": {
     "title": "Resume",
@@ -52,10 +52,36 @@
     
   },
   "projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "zewothermApp": {
+      "title": "Zewotherm Produktwelt App",
+      "message": "During my Apprenticeship i developed an App for Customers to show them Infos about the Company Products. The App is developed with ReactNative and Expo and was release on January 2022"
+    },
+    "chattyEvent": {
+      "title": "ChattyEvent",
+      "message": "ChattyEvent is an Mobile Cross-Platform app i developed starting fall 2022. With my App you can Chat with your friends plan partys etc. It's developed with Flutter in the Frontend and NestJS, MongoDB, Kafka and AWS S3 in the Backend. It uses GraphQL instead of an REST API for more efficient requests. The App is currently available in the google play store and the apple app store"
+    },
+    "personalWebsite": {
+      "title": "Personal Website",
+      "message": "This the website you currently see. It's developed with NextJS and NextUI as UI library. I designed it using Figma"
+    }
   },
   "aboutMe": {
-    "title": "About me"
+    "title": "About me",
+    "personalData": {
+      "degree": "Middle maturity (FIAE German Apprenticeship Degree expected in mid-2024)"
+    },
+    "skills": {
+      "title": "programming knowledge",
+      "legend": {
+        "title": "legend",
+        "goodExperience": "Good experience",
+        "basicExperience": "Basic experience"
+      },
+      "codingLanguages": "Coding languages",
+      "databases": "Databases",
+      "technologiesPluginsOthers": "Technologies / plugins / others"
+    }
   },
   "contact": {
     "title": "Contact"

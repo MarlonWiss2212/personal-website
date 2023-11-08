@@ -23,7 +23,7 @@
     "title1": "Hallo, mein Name ist",
     "title2": "Marlon Wißkirchen",
     "title3": "Ich bin Softwareentwickler",
-    "text": "Ich bin ein Softwareentwickler aus Rheinland-Pfalz, Deutschland."
+    "text": "Ich bin ein 18 Jähriger Softwareentwickler aus Rheinland-Pfalz, Deutschland."
   },
   "resume": {
     "title": "Lebenslauf",
@@ -51,10 +51,36 @@
     }
   },
   "projects": {
-    "title": "Projekte"
+    "title": "Projekte",
+    "zewothermApp": {
+      "title": "Zewotherm Produktwelt App",
+      "message": "Während meiner Ausbildung habe ich eine App entwickelt, um Kunden Informationen über die Unternehmensprodukte zu zeigen. Die App wurde mit ReactNative und Expo entwickelt und im Januar 2022 veröffentlicht."
+    },
+    "chattyEvent": {
+      "title": "ChattyEvent",
+      "message": "ChattyEvent ist eine mobile plattformübergreifende App, die ich ab Herbst 2022 entwickelt habe. Mit meiner App können Sie mit Ihren Freunden chatten, Partys planen usw. Sie wurde im Frontend mit Flutter und im Backend mit NestJS, MongoDB, Kafka und AWS S3 entwickelt. Sie verwendet GraphQL anstelle einer REST-API für effizientere Anfragen. Die App ist derzeit im Google Play Store und im Apple App Store verfügbar."
+    },
+    "personalWebsite": {
+      "title": "Persönliche Website",
+      "message": "Dies ist die Website, die Sie derzeit sehen. Sie wurde mit NextJS und NextUI als UI-Bibliothek entwickelt. Ich habe sie mit Figma entworfen."
+    }    
   },
   "aboutMe": {
-    "title": "Über mich"
+    "title": "Über mich",
+    "personalData": {
+      "degree": "Mittlere Reife (FIAE Ausbildung Abschluss Mitte 2024)"
+    },
+    "skills": {
+      "title": "Programmierkentnisse",
+      "legend": {
+        "title": "Legende",
+        "goodExperience": "Gute Erfahrung",
+        "basicExperience": "Einfache Erfahrung"
+      },
+      "codingLanguages": "Programmiersprachen",
+      "databases": "Datenbanken",
+      "technologiesPluginsOthers": "Technologien / Plugins / Sonstiges"
+    }
   },
   "contact": {
     "title": "Kontakt"

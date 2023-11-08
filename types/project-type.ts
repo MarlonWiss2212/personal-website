@@ -1,6 +1,7 @@
 export interface ProjectType {
-  title: string
-  message: string
-  images: string[]
-  className: string
+  title: string;
+  message: string;
+  images: string[];
+  className: string;
+  gitHubLink?: string;
 }
