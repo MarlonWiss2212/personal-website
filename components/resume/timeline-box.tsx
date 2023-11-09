@@ -22,7 +22,7 @@ export default function TimelineBox({ text, title, onRight, certificates }: Time
               <div className="flex flex-wrap gap-2 pt-2">
                 {certificates.map(certificate => {
                   return (
-                    <Link href={certificate.link} rel="noopener noreferrer" target="_blank">
+                    <Link key={certificate.link} href={certificate.link} rel="noopener noreferrer" target="_blank">
                       <div className="bg-neutral-800 flex items-center justify-center font-semibold text-sm h-8 w-auto rounded-md p-1 text-white">{certificate.name}</div>
                     </Link>
                   )

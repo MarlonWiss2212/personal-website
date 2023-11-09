@@ -23,7 +23,6 @@ export default function AnimatedListWithLinks({ setSidebarOpen }: { setSidebarOp
   const locale = useLocale()
 
   const pathname = usePathname()
-  console.log(pathname)
   const navigation = [
     { name: t("page.title"), href: transformLocale(locale), current: pathname == transformLocale(locale, false) },
     { name: t("resume.title"), href: `${transformLocale(locale)}resume`, current: pathname.startsWith(`${transformLocale(locale)}resume`) },

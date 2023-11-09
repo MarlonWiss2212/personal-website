@@ -4,6 +4,9 @@
     "english": "Englisch",
     "german": "Deutsch"
   },
+  "general": {
+    "password": "Passwort"
+  },
   "month": {
     "january": "Januar",
     "february": "Februar",
