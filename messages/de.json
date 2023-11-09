@@ -28,6 +28,7 @@
   "resume": {
     "title": "Lebenslauf",
     "timeline": {
+      "certificateTitle": "Zeugnisse",
       "box1": {
         "title": "Erste Programmiererfahrungen",
         "description": "Bereits im Alter von 12 Jahren interessierte ich mich für das Programmieren und eignete mir grundlegende Kenntnisse im Webentwicklungsbereich an, indem ich mir HTML, CSS und JavaScript selbst beibrachte. Mit 14 Jahren begann ich außerdem, erste Erfahrungen in der Android-Plattform zu sammeln und entwickelte mit Kotlin eine Chat-App für Android. Während der Pandemie im Jahr 2020 erstellte ich außerdem ein Spiel mithilfe der Unity Game Engine und C#."
@@ -42,7 +43,11 @@
       },
       "box4": {
         "title": "Ausbildung als Anwendungsentwickler (FIAE)",
-        "description": "Meine Ausbildung als Anwendungsentwickler (FIAE) habe ich bei der Zewotherm GmbH begonnen und werde voraussichtlich im Sommer 2024 abschließen. Während meiner Ausbildung konnte ich meine Kenntnisse im Bereich Webentwicklung erheblich erweitern. Darüber hinaus sammelte ich wertvolle Erfahrungen im Bereich Mobile Development."
+        "description": "Meine Ausbildung als Anwendungsentwickler (FIAE) habe ich bei der Zewotherm GmbH begonnen und werde voraussichtlich im Sommer 2024 abschließen. Während meiner Ausbildung konnte ich meine Kenntnisse im Bereich Webentwicklung erheblich erweitern. Darüber hinaus sammelte ich wertvolle Erfahrungen im Bereich Mobile Development.",
+        "certificates": {
+          "2023Text": "Letztes Zeugniss",
+          "2023_1Text": "Letztes Zeugniss Rückseite"
+        }
       },
       "box5": {
         "title": "Entwicklung einer Flutter-App neben der Ausbildung",

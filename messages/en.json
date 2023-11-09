@@ -28,6 +28,7 @@
   "resume": {
     "title": "Resume",
     "timeline": {
+      "certificateTitle": "Certificates",
       "box1": {
         "title": "First Programming Experiences",
         "description": "I became interested in programming at the age of 12 and acquired basic skills in web development by teaching myself HTML, CSS, and JavaScript. At the age of 14, I also started gaining initial experiences with the Android platform and developed a Chat App for Android using Kotlin. Additionally, during the 2020 pandemic, I developed a game using the Unity Game Engine and C#."
@@ -42,7 +43,11 @@
       },
       "box4": {
         "title": "Apprenticeship as an Application Developer (FIAE)",
-        "description": "I began my apprenticeship as an Application Developer (FIAE) at Zewotherm GmbH and am expected to complete it in the summer of 2024. During my apprenticeship, I significantly expanded my knowledge in web development and gained valuable experience in the field of Mobile Development."
+        "description": "I began my apprenticeship as an Application Developer (FIAE) at Zewotherm GmbH and am expected to complete it in the summer of 2024. During my apprenticeship, I significantly expanded my knowledge in web development and gained valuable experience in the field of Mobile Development.",
+        "certificates": {
+          "2023Text": "Last certificate",
+          "2023_1Text": "Last certificate back"
+        }
       },
       "box5": {
         "title": "Development of a Flutter App alongside Apprenticeship",
