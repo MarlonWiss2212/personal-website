@@ -4,4 +4,7 @@ export interface ProjectType {
   images: string[];
   className: string;
   gitHubLink?: string;
+  playStoreLink?: string;
+  appStoreLink?: string;
+  websiteLink?: string;
 }

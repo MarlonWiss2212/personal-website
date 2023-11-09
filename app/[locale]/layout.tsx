@@ -23,6 +23,7 @@ export default async function RootLayout({ children, params: {locale} }: { child
   return (
     <html lang={locale} className="h-full">
       <head>
+        <link rel="icon" href="/marlon_photo.jpg" sizes="any" className="rounded-md" />
         <meta name="google-site-verification" content="celk3M5txdecAsTCiA_HbYzoedL9yWE3HP3wmA3TIr0" />
       </head>
       <body className={inter.className + " bg-black text-white"}>
