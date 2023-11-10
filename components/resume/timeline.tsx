@@ -1,15 +1,12 @@
 import { useTranslations } from "next-intl"
 import TimelineDateBox from "./timeline-date-box"
-import { Certificate } from "@/types/certificate-type";
+import { Certificate } from "@/types/certificate-type"
 
 export default function Timeline() {
   const t = useTranslations("resume.timeline")
   const tMonth = useTranslations("month")
 
-  const certificates: Certificate[] = [
-    { link: "/certificates/2023.pdf", name: t("box4.certificates.2023Text") },
-    { link: "/certificates/2023_1.pdf", name: t("box4.certificates.2023_1Text") },
-  ];
+  const certificates: Certificate[] = [{ link: "/certificate_2023.pdf", name: t("box4.certificates.2023Text") }]
 
   return (
     <div className="flex flex-col flex-grow overflow-y-scroll text-white md:px-10 cursor-default lg:pb-14">

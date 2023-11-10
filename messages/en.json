@@ -48,8 +48,7 @@
         "title": "Apprenticeship as an Application Developer (FIAE)",
         "description": "I began my apprenticeship as an Application Developer (FIAE) at Zewotherm GmbH and am expected to complete it in the summer of 2024. During my apprenticeship, I significantly expanded my knowledge in web development and gained valuable experience in the field of Mobile Development.",
         "certificates": {
-          "2023Text": "Last certificate",
-          "2023_1Text": "Last certificate back"
+          "2023Text": "Last certificate"
         }
       },
       "box5": {
@@ -57,7 +56,6 @@
         "description": "In my pursuit of continuous knowledge expansion, I developed apps with Flutter alongside my apprenticeship. These apps were created in conjunction with NestJS backends, MongoDB, Apache Kafka, and various other tools, and I successfully published them."
       }
     }
-    
   },
   "projects": {
     "title": "Projects",

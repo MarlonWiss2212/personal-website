@@ -48,8 +48,7 @@
         "title": "Ausbildung als Anwendungsentwickler (FIAE)",
         "description": "Meine Ausbildung als Anwendungsentwickler (FIAE) habe ich bei der Zewotherm GmbH begonnen und werde voraussichtlich im Sommer 2024 abschließen. Während meiner Ausbildung konnte ich meine Kenntnisse im Bereich Webentwicklung erheblich erweitern. Darüber hinaus sammelte ich wertvolle Erfahrungen im Bereich Mobile Development.",
         "certificates": {
-          "2023Text": "Letztes Zeugniss",
-          "2023_1Text": "Letztes Zeugniss Rückseite"
+          "2023Text": "Letztes Zeugniss"
         }
       },
       "box5": {
@@ -71,7 +70,7 @@
     "personalWebsite": {
       "title": "Persönliche Website",
       "message": "Dies ist die Website, die Sie derzeit sehen. Sie wurde mit NextJS und NextUI als UI-Bibliothek entwickelt. Ich habe sie mit Figma entworfen."
-    }    
+    }
   },
   "aboutMe": {
     "title": "Über mich",
