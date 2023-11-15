@@ -1,4 +1,4 @@
-import PasswordPromptDialog from "../model/password-prompt-dialog";
+import PasswordPromptDialog from "../modal/password-prompt-dialog";
 import { cookies } from 'next/headers'
 
 export default function PasswordProtectedRoute({ children }: { children: React.ReactNode }) {

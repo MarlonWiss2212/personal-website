@@ -7,8 +7,9 @@ export default function PasswordPromptDialog() {
   const t = useTranslations("general")
   const [password, setPassword] = useState('');
 
-  async function handleButtonPress(e: any) {
-    const request = await fetch(`/api`, {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    const request = await fetch(e.currentTarget.action, {
       body: JSON.stringify({password}),
       headers: {"Content-Type": "application/json"},
       method: "post",
@@ -20,7 +21,7 @@ export default function PasswordPromptDialog() {
 
   return (
     <div className='flex w-full h-full items-center justify-center'>
-      <form className="flex flex-col items-center justify-center gap-4 overscroll-none h-full w-full md:w-2/5">
+      <form method='POST' action={"/api"} onSubmit={handleSubmit} className="flex flex-col items-center justify-center gap-4 overscroll-none h-full w-full md:w-2/5">
         <Input
           type="password"
           id="password"
@@ -28,7 +29,7 @@ export default function PasswordPromptDialog() {
           value={password}
           onChange={(e) => setPassword(e.target.value)} 
         />
-        <Button className='w-full' color='primary' onPress={handleButtonPress} type="button">Login</Button>
+        <Button className='w-full' color='primary' type="submit">Login</Button>
       </form>
     </div>
  );
