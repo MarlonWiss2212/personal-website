@@ -11,19 +11,35 @@ export default function Projects() {
       message: t("zewothermApp.message"),
       images: ["/react-native.png", "/expo.png"],
       className: "",
-      appStoreLink: "https://apps.apple.com/de/app/zewotherm-produktwelt/id1659347270",
-      playStoreLink: "https://play.google.com/store/apps/details?id=de.zwsystems.produktwelt",
+      appStore: {
+        appleLink: "https://apps.apple.com/de/app/zewotherm-produktwelt/id1659347270",
+        googleLink: "https://play.google.com/store/apps/details?id=de.zwsystems.produktwelt",
+      }
     },
     {
       title: t("chattyEvent.title"),
       message: t("chattyEvent.message"),
       images: ["/flutter.png", "/nuxt.svg", "/nest-js.png", "/graphql.png", "/firebase-auth.png", "/mongodb.svg", "/aws-s3-icon.png", "/kafka.png"],
       className: "md:col-span-2 row-span-2",
-      appStoreLink: "https://apps.apple.com/de/app/chattyevent/id6463625762",
-      playStoreLink: "https://play.google.com/store/apps/details?id=com.chattyevent.chattyevent",
-      websiteLink: "https://chattyevent.com",
+      appStore: {
+        appleLink: "https://apps.apple.com/de/app/chattyevent/id6463625762",
+        googleLink: "https://play.google.com/store/apps/details?id=com.chattyevent.chattyevent",
+        gitLink: "https://github.com/MarlonWiss2212/chattyevent_app_flutter"
+      },
+      web: {
+        link: "https://chattyevent.com",
+        gitLink: "https://github.com/MarlonWiss2212/chattyevent-web"
+      }
     },
-    { title: t("personalWebsite.title"), message: t("personalWebsite.message"), images: ["/next.svg"], className: "", gitHubLink: "https://github.com/MarlonWiss2212/personal-webpage" },
+    { 
+      title: t("personalWebsite.title"), 
+      message: t("personalWebsite.message"),
+      images: ["/next.svg"], 
+      className: "",
+      web: {
+        gitLink: "https://github.com/MarlonWiss2212/personal-webpage" 
+      }
+    },
   ]
 
   return (

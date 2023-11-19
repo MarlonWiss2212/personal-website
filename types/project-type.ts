@@ -3,8 +3,13 @@ export interface ProjectType {
   message: string;
   images: string[];
   className: string;
-  gitHubLink?: string;
-  playStoreLink?: string;
-  appStoreLink?: string;
-  websiteLink?: string;
+  web?: {
+    link?: string;
+    gitLink?: string;
+  }
+  appStore?: {
+    appleLink?: string;
+    googleLink?: string;
+    gitLink?: string;
+  }
 }

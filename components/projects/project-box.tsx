@@ -17,16 +17,23 @@ export default function ProjectBox({ project, className }: { project: ProjectTyp
             <h3 className="font-bold text-xl">{project.title}</h3>
             <h4>{project.message}</h4>
           </div>
-          <div className="flex flex-col">
-            {(project.appStoreLink != null || project.playStoreLink != null || project.websiteLink != null) &&
-              <div className="flex flex-wrap gap-2 py-2">
-                {project.appStoreLink != null && <AppStoreLink appStoreLink={project.appStoreLink}/> }
-                {project.playStoreLink != null && <PlayStoreLink playStoreLink={project.playStoreLink}/> }
-                {project.websiteLink != null && <WebsiteLink websiteLink={project.websiteLink}/> }
+          <div className="flex flex-col gap-2">
+            {(project.web?.gitLink != null || project.appStore?.gitLink != null) &&
+              <div className="flex flex-wrap gap-2">
+              {project.web?.gitLink != null && 
+                  <GithubLink gitHubLink={project.web.gitLink} imageSrc={"/website-icon.svg"} />
+                }
+                {project.appStore?.gitLink != null && 
+                  <GithubLink gitHubLink={project.appStore.gitLink} />
+                }
               </div>
             }
-            {project.gitHubLink != null && 
-              <GithubLink gitHubLink={project.gitHubLink} />
+            {(project.web?.link != null || project.appStore?.appleLink != null || project.appStore?.googleLink != null) &&
+              <div className="flex flex-wrap gap-2">
+                {project.appStore?.appleLink != null && <AppStoreLink appStoreLink={project.appStore.appleLink}/> }
+                {project.appStore?.googleLink != null && <PlayStoreLink playStoreLink={project.appStore.googleLink}/> }
+                {project.web?.link!= null && <WebsiteLink websiteLink={project.web.link}/> }
+              </div>
             }
             <div className="flex flex-wrap gap-2 overscroll-x-auto">
               {project.images.map((image, index) => (
