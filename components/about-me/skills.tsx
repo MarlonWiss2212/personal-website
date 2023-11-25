@@ -80,6 +80,8 @@ export default function Skills() {
               <Chip color="primary">Supabase</Chip>
               <Chip color="primary">Firebase</Chip>
               <Chip>Apache Kafka</Chip>
+              <Chip>Jetpack Compose</Chip>
+              <Chip>Compose Multiplatform / Kotlin Multiplatform</Chip>
               <Chip>PWA</Chip>
               <Chip>Auth0</Chip>
               <Chip>Vite</Chip>
