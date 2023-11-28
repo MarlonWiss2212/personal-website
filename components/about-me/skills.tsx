@@ -79,7 +79,9 @@ export default function Skills() {
               <Chip color="primary">Tailwind-CSS</Chip>
               <Chip color="primary">Supabase</Chip>
               <Chip color="primary">Firebase</Chip>
-              <Chip>Apache Kafka</Chip>
+              <Chip color="primary">Scrum</Chip>
+              <Chip color="primary">Kanban</Chip>
+             <Chip>Apache Kafka</Chip>
               <Chip>Jetpack Compose</Chip>
               <Chip>Compose Multiplatform / Kotlin Multiplatform</Chip>
               <Chip>PWA</Chip>
