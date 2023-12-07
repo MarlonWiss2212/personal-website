@@ -5,7 +5,8 @@
     "german": "Deutsch"
   },
   "general": {
-    "password": "Passwort"
+    "password": "Passwort",
+    "send": "Senden"
   },
   "month": {
     "january": "Januar",
@@ -90,6 +91,13 @@
     }
   },
   "contact": {
-    "title": "Kontakt"
+    "title": "Kontakt",
+    "contactForm": {
+      "sendAMessage": "Sende eine Nachricht",
+      "email": "E-Mail",
+      "phoneNumber": "Tel.",
+      "title": "Titel",
+      "message": "Nachricht"
+    }
   }
 }

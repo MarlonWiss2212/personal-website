@@ -5,21 +5,22 @@
     "german": "German"
   },
   "general": {
-    "password": "Password"
+    "password": "Password",
+    "send": "Send"
   },
   "month": {
-    "january": "Januar",
-    "february": "Februar",
-    "march": "März",
+    "january": "January",
+    "february": "February",
+    "march": "March",
     "april": "April",
-    "may": "Mai",
-    "june": "Juni",
-    "july": "Juli",
+    "may": "May",
+    "june": "June",
+    "july": "July",
     "august": "August",
     "september": "September",
-    "october": "Oktober",
+    "october": "October",
     "november": "November",
-    "december": "Dezember"
+    "december": "December"
   },
   "page": {
     "title": "Home",
@@ -90,6 +91,13 @@
     }
   },
   "contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "contactForm": {
+      "sendAMessage": "Send a message",
+      "email": "Email",
+      "phoneNumber": "Tel.",
+      "title": "Title",
+      "message": "Message"
+    }
   }
 }

@@ -2,6 +2,7 @@
   "name": "marlon-wisskirchen-webpage",
   "version": "0.1.0",
   "private": true,
+  "module": "commonjs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -26,6 +27,7 @@
     "negotiator": "^0.6.3",
     "next": "13.4.19",
     "next-intl": "^3.0.0-beta.19",
+    "nodemailer": "^6.9.7",
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -37,6 +39,7 @@
     "@types/aos": "^3.0.7",
     "@types/cookie": "^0.5.4",
     "@types/negotiator": "^0.6.2",
+    "@types/nodemailer": "^6.4.14",
     "@vitejs/plugin-react": "^4.2.1",
     "jsdom": "^23.0.1",
     "vitest": "^1.0.1"
