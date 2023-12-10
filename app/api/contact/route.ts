@@ -7,20 +7,21 @@ export async function POST(request: Request) {
         const emailData: SendMailType = await request.json()
         const transporter = nodemailer.createTransport({
             host: process.env.EMAIL_SERVICE,
-            port: 587,
+            port: 465,
+            secure: true,
             auth: {
                 user: process.env.EMAIL_USERNAME,
                 pass: process.env.EMAIL_PASSWORD
             },
         })
         const response = await transporter.sendMail({
-            from: emailData.sendFromEmail,
+            from: process.env.EMAIL_SEND_FROM,
             to: process.env.EMAIL_SEND_TO,
             subject: emailData.title,
-            text: emailData.message,
-            html: emailData.message
+            text: `${emailData.sendFromEmail}, ${emailData.phoneNumber}: ${emailData.message}`,
+            html: `${emailData.sendFromEmail}, ${emailData.phoneNumber}: ${emailData.message}`,
         })
-        return NextResponse.json({ status: 200 })
+        return NextResponse.json({ status: 200, data: response })
     } catch (e) {
         return NextResponse.json({ status: 500 })
     }
