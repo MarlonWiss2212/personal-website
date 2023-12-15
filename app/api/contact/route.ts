@@ -1,14 +1,21 @@
 import nodemailer from 'nodemailer'
 import {SendMailType} from "@/types/send-mail-type";
 import {NextResponse} from "next/server";
-import {EmailUseCases} from "./../../../domain/usecases/email.usecases";
+import { ValidationUsecases } from "../../../domain/usecases/validation.usecases";
 
 export async function POST(request: Request) {
-  const emailUseCases = new EmailUseCases()
+  const validationUseCases = new ValidationUsecases()
   try {
     const emailData: SendMailType = await request.json()
 
-    if(!emailUseCases.checkIfEmailIsValid(emailData.sendFromEmail)) {
+    const isEmailValid = validationUseCases.isEmailValid(emailData.sendFromEmail)
+    const isPhoneNumberValid = emailData.phoneNumber != undefined ? validationUseCases.isPhoneNumberValid(emailData.phoneNumber) : undefined
+
+    if(!isEmailValid && isPhoneNumberValid != undefined && !isPhoneNumberValid) {
+      return NextResponse.json(null, { status: 500 })
+    } else if (!isEmailValid) {
+      return NextResponse.json(null, { status: 500 })
+    } else if (isPhoneNumberValid != undefined && !isPhoneNumberValid) {
       return NextResponse.json(null, { status: 500 })
     }
 

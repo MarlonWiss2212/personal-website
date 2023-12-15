@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e07d227e-968c-4019-8516-3f207b2ccfb7" name="Changes" comment="add test file for api routes">
-      <change afterPath="$PROJECT_DIR$/domain/usecases/email.usecases.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/usecases/email.usecases.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_12_2023_17_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_12_2023_17_56__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_10_12_2023_17_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_10_12_2023_17_56__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/contact/route.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/contact/route.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api/contact/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/contact/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/usecases/email.usecases.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/domain/usecases/validation.usecases.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/usecases/email.usecases.ts" beforeDir="false" afterPath="$PROJECT_DIR$/domain/usecases/validation.usecases.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +51,7 @@
     "Vitest.GitHub Link Component.should show the image.executor": "Run",
     "Vitest.Send Email Route.executor": "Run",
     "Vitest.Send Email Route.should return 500 if email is wrong.executor": "Run",
+    "Vitest.Validation Use Cases.executor": "Run",
     "Vitest.Website Link Component.executor": "Run",
     "Vitest.adds 1 + 2 to equal 3.executor": "Run",
     "git-widget-placeholder": "develop",
@@ -131,26 +131,26 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Website Link Component" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+    <configuration name="Validation Use Cases" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
       <working-dir value="$PROJECT_DIR$" />
       <vitest-options value="--run" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/components/general/website-link.test.tsx" />
+      <test-file value="$PROJECT_DIR$/domain/usecases/validation.usecases.test.ts" />
       <test-names>
-        <test-name value="Website Link Component" />
+        <test-name value="Validation Use Cases" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Vitest.Send Email Route" />
+        <item itemvalue="Vitest.Validation Use Cases" />
         <item itemvalue="Vitest.Send Email Route.should return 500 if email is wrong" />
         <item itemvalue="Vitest.Email Use Cases" />
         <item itemvalue="Vitest.Email Use Cases.call ifEmailValidFunction and test if it returns true if right email is passed" />
-        <item itemvalue="Vitest.Website Link Component" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +172,7 @@
       <workItem from="1702398084525" duration="25000" />
       <workItem from="1702594213281" duration="396000" />
       <workItem from="1702648901868" duration="1393000" />
+      <workItem from="1702656357599" duration="646000" />
     </task>
     <task id="LOCAL-00001" summary="add tests for links">
       <option name="closed" value="true" />
