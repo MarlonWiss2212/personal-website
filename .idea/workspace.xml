@@ -4,18 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e07d227e-968c-4019-8516-3f207b2ccfb7" name="Changes" comment="add test file for api routes">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_12_2023_17_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_12_2023_17_56__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_10_12_2023_17_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_10_12_2023_17_56__Changes_.xml" afterDir="false" />
+    <list default="true" id="e07d227e-968c-4019-8516-3f207b2ccfb7" name="Changes" comment="more unit tests and commenting">
+      <change afterPath="$PROJECT_DIR$/types/contact-route-response-type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/contact/route.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/contact/route.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api/contact/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/contact/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/usecases/email.usecases.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/domain/usecases/validation.usecases.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/usecases/email.usecases.ts" beforeDir="false" afterPath="$PROJECT_DIR$/domain/usecases/validation.usecases.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/contact/contact-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/contact/contact-form.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -50,6 +56,7 @@
     "Vitest.Email Use Cases.executor": "Run",
     "Vitest.GitHub Link Component.should show the image.executor": "Run",
     "Vitest.Send Email Route.executor": "Run",
+    "Vitest.Send Email Route.should return 200 if phoneNumber is empty.executor": "Run",
     "Vitest.Send Email Route.should return 500 if email is wrong.executor": "Run",
     "Vitest.Validation Use Cases.executor": "Run",
     "Vitest.Website Link Component.executor": "Run",
@@ -90,20 +97,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Email Use Cases.call ifEmailValidFunction and test if it returns true if right email is passed" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <vitest-options value="--run" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/domain/usecases/email.usecases.test.ts" />
-      <test-names>
-        <test-name value="Email Use Cases" />
-        <test-name value="call ifEmailValidFunction and test if it returns true if right email is passed" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="Send Email Route" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
@@ -114,6 +107,20 @@
       <test-file value="$PROJECT_DIR$/app/api/contact/route.test.tsx" />
       <test-names>
         <test-name value="Send Email Route" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Send Email Route.should return 200 if phoneNumber is empty" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/app/api/contact/route.test.tsx" />
+      <test-names>
+        <test-name value="Send Email Route" />
+        <test-name value="should return 200 if phoneNumber is empty" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -147,10 +154,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Vitest.Send Email Route" />
+        <item itemvalue="Vitest.Send Email Route.should return 200 if phoneNumber is empty" />
         <item itemvalue="Vitest.Validation Use Cases" />
         <item itemvalue="Vitest.Send Email Route.should return 500 if email is wrong" />
         <item itemvalue="Vitest.Email Use Cases" />
-        <item itemvalue="Vitest.Email Use Cases.call ifEmailValidFunction and test if it returns true if right email is passed" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +179,10 @@
       <workItem from="1702398084525" duration="25000" />
       <workItem from="1702594213281" duration="396000" />
       <workItem from="1702648901868" duration="1393000" />
-      <workItem from="1702656357599" duration="646000" />
+      <workItem from="1702656357599" duration="1017000" />
+      <workItem from="1702658804963" duration="139000" />
+      <workItem from="1702667862079" duration="8000" />
+      <workItem from="1702680679472" duration="2909000" />
     </task>
     <task id="LOCAL-00001" summary="add tests for links">
       <option name="closed" value="true" />
@@ -190,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702594602888</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="more unit tests and commenting">
+      <option name="closed" value="true" />
+      <created>1702657366918</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702657366918</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +217,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add tests for links" />
     <MESSAGE value="add test file for api routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test file for api routes" />
+    <MESSAGE value="more unit tests and commenting" />
+    <option name="LAST_COMMIT_MESSAGE" value="more unit tests and commenting" />
   </component>
 </project>

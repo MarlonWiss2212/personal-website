@@ -9,7 +9,7 @@ describe("Send Email Route", () => {
       message: "Test Message",
       title: "Test Title",
       sendFromEmail: "marlon",
-      phoneNumber: "136686787"
+      phoneNumber: "Test"
     }
     const { req } = createMocks({ body: data, method: "POST" })
     const response = await POST(req)
@@ -20,13 +20,30 @@ describe("Send Email Route", () => {
     const data: SendMailType = {
       message: "Test Message",
       title: "Test Title",
-      sendFromEmail: "marlon.wiss@outlook.de",
-      phoneNumber: "136686787"
+      sendFromEmail: "mar.qwaefin@outlook.de",
+      phoneNumber: "Test"
     }
     const { req } = createMocks({ body: data, method: "POST" })
     const response = await POST(req)
 
     expect(response.status).toBe(500)
+  })
+  it("should return both error messages if email and phoneNumber are wrong", async () => {
+    const data: SendMailType = {
+      message: "Test Message",
+      title: "Test Title",
+      sendFromEmail: "Tecdsfst",
+      phoneNumber: "Tedft"
+    }
+    const { req } = createMocks({ body: data, method: "POST" })
+    const response = await POST(req)
+    const bodyData = await response.json()
+    expect(bodyData).toEqual({
+      messageError: false,
+      phoneNumberError: true,
+      titleError: false,
+      sendFromEmailError: true,
+    })
   })
   it("should return 200 if no phoneNumber is provided", async () => {
     const data: SendMailType = {
@@ -37,6 +54,18 @@ describe("Send Email Route", () => {
     const { req } = createMocks({ body: data, method: "POST" })
     const response = await POST(req)
 
-    expect(response.status).toBe(500)
+    expect(response.status).toBe(200)
+  })
+  it("should return 200 if phoneNumber is empty", async () => {
+    const data: SendMailType = {
+      message: "Test Message",
+      title: "Test Title",
+      sendFromEmail: "mar.qwaefin@outlook.de",
+      phoneNumber: ""
+    }
+    const { req } = createMocks({ body: data, method: "POST" })
+    const response = await POST(req)
+
+    expect(response.status).toBe(200)
   })
 })

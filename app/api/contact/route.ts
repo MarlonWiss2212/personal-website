@@ -2,21 +2,31 @@ import nodemailer from 'nodemailer'
 import {SendMailType} from "@/types/send-mail-type";
 import {NextResponse} from "next/server";
 import { ValidationUsecases } from "../../../domain/usecases/validation.usecases";
+import { ContactRouteResponseType } from "@/types/contact-route-response-type";
 
 export async function POST(request: Request) {
-  const validationUseCases = new ValidationUsecases()
   try {
+    const validationUseCases = new ValidationUsecases()
     const emailData: SendMailType = await request.json()
 
+    let responseData: ContactRouteResponseType = {
+      messageError: false,
+      phoneNumberError: false,
+      titleError: false,
+      sendFromEmailError: false,
+    }
     const isEmailValid = validationUseCases.isEmailValid(emailData.sendFromEmail)
-    const isPhoneNumberValid = emailData.phoneNumber != undefined ? validationUseCases.isPhoneNumberValid(emailData.phoneNumber) : undefined
+    const isPhoneNumberValid = emailData.phoneNumber != undefined && emailData.phoneNumber != "" ? validationUseCases.isPhoneNumberValid(emailData.phoneNumber) : undefined
 
-    if(!isEmailValid && isPhoneNumberValid != undefined && !isPhoneNumberValid) {
-      return NextResponse.json(null, { status: 500 })
-    } else if (!isEmailValid) {
-      return NextResponse.json(null, { status: 500 })
-    } else if (isPhoneNumberValid != undefined && !isPhoneNumberValid) {
-      return NextResponse.json(null, { status: 500 })
+    if (!isEmailValid) {
+      responseData.sendFromEmailError = true
+    }
+    if (isPhoneNumberValid != undefined && !isPhoneNumberValid) {
+      responseData.phoneNumberError = true
+    }
+
+    if(responseData.phoneNumberError || responseData.titleError || responseData.messageError || responseData.sendFromEmailError) {
+      return NextResponse.json(responseData, { status: 500 })
     }
 
     const transporter = nodemailer.createTransport({
@@ -28,15 +38,15 @@ export async function POST(request: Request) {
           pass: process.env.EMAIL_PASSWORD
         },
     })
-    const response = await transporter.sendMail({
+    await transporter.sendMail({
       from: process.env.EMAIL_SEND_FROM,
       to: process.env.EMAIL_SEND_TO,
       subject: emailData.title,
       text: `${emailData.sendFromEmail}, ${emailData.phoneNumber}: ${emailData.message}`,
       html: `${emailData.sendFromEmail}, ${emailData.phoneNumber}: ${emailData.message}`,
     })
-    return NextResponse.json({ ...response }, { status: 200 })
-  } catch (e) {
+    return NextResponse.json(null, { status: 200 })
+  } catch (error) {
     return NextResponse.json(null, { status: 500 })
   }
 }
