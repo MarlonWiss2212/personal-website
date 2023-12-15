@@ -1,0 +1,104 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e07d227e-968c-4019-8516-3f207b2ccfb7\" name=\"Changes\" comment=\"add tests for links\">\r\n      <change afterPath=\"$PROJECT_DIR$/app/api/contact/route.ts\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/components/contact/contact-form.tsx\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/components/general/github-link.test.tsx\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/components/general/play-store-link.test.tsx\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/components/general/website-link.test.tsx\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/types/send-mail-type.ts\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app/[locale]/contact/page.tsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/[locale]/contact/page.tsx\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/components/general/app-store-link.test.tsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/components/general/app-store-link.test.tsx\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/components/general/github-link.tsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/components/general/github-link.tsx\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/components/general/play-store-link.tsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/components/general/play-store-link.tsx\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/components/general/website-link.tsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/components/general/website-link.tsx\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/messages/de.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/messages/de.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/messages/en.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/messages/en.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/package-lock.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/package-lock.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/package.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/package.json\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"ProjectErrors\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 0\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2ZBUsunjZG0LrKoz2S97wbNWBtN\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"Vitest.All Tests.executor\": \"Run\",\r\n    \"Vitest.App Store Link Component.executor\": \"Run\",\r\n    \"Vitest.App Store Link Component.should show the image.executor\": \"Run\",\r\n    \"Vitest.GitHub Link Component.should show the image.executor\": \"Run\",\r\n    \"Vitest.Website Link Component.executor\": \"Run\",\r\n    \"Vitest.adds 1 + 2 to equal 3.executor\": \"Run\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"last_opened_file_path\": \"E:/Coding/personal-webpage/components/general\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"npm.dev.executor\": \"Run\",\r\n    \"npm.test.executor\": \"Run\",\r\n    \"settings.editor.selected.configurable\": \"preferences.sourceCode.TypeScript\",\r\n    \"ts.external.directory.path\": \"E:\\\\Coding\\\\personal-webpage\\\\node_modules\\\\typescript\\\\lib\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"E:\\Coding\\personal-webpage\\components\\general\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"E:\\Coding\\personal-webpage\\app\\api\\contact\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"npm.dev\">\r\n    <configuration name=\"App Store Link Component.should show the image\" type=\"JavaScriptTestRunnerVitest\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <node-interpreter value=\"project\" />\r\n      <vitest-package value=\"$PROJECT_DIR$/node_modules/vitest\" />\r\n      <working-dir value=\"$PROJECT_DIR$\" />\r\n      <vitest-options value=\"--run\" />\r\n      <envs />\r\n      <scope-kind value=\"TEST\" />\r\n      <test-file value=\"$PROJECT_DIR$/components/general/app-store-link.test.tsx\" />\r\n      <test-names>\r\n        <test-name value=\"App Store Link Component\" />\r\n        <test-name value=\"should show the image\" />\r\n      </test-names>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"GitHub Link Component.should show the image\" type=\"JavaScriptTestRunnerVitest\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <node-interpreter value=\"project\" />\r\n      <vitest-package value=\"$PROJECT_DIR$/node_modules/vitest\" />\r\n      <working-dir value=\"$PROJECT_DIR$\" />\r\n      <vitest-options value=\"--run\" />\r\n      <envs />\r\n      <scope-kind value=\"TEST\" />\r\n      <test-file value=\"$PROJECT_DIR$/components/general/github-link.test.tsx\" />\r\n      <test-names>\r\n        <test-name value=\"GitHub Link Component\" />\r\n        <test-name value=\"should show the image\" />\r\n      </test-names>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Website Link Component\" type=\"JavaScriptTestRunnerVitest\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <node-interpreter value=\"project\" />\r\n      <vitest-package value=\"$PROJECT_DIR$/node_modules/vitest\" />\r\n      <working-dir value=\"$PROJECT_DIR$\" />\r\n      <vitest-options value=\"--run\" />\r\n      <envs />\r\n      <scope-kind value=\"SUITE\" />\r\n      <test-file value=\"$PROJECT_DIR$/components/general/website-link.test.tsx\" />\r\n      <test-names>\r\n        <test-name value=\"Website Link Component\" />\r\n      </test-names>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"dev\" type=\"js.build_tools.npm\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <package-json value=\"$PROJECT_DIR$/package.json\" />\r\n      <command value=\"run\" />\r\n      <scripts>\r\n        <script value=\"dev\" />\r\n      </scripts>\r\n      <node-interpreter value=\"project\" />\r\n      <envs />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"test\" type=\"js.build_tools.npm\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <package-json value=\"$PROJECT_DIR$/package.json\" />\r\n      <command value=\"run\" />\r\n      <scripts>\r\n        <script value=\"test\" />\r\n      </scripts>\r\n      <node-interpreter value=\"project\" />\r\n      <envs />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"npm.dev\" />\r\n        <item itemvalue=\"npm.test\" />\r\n        <item itemvalue=\"Vitest.GitHub Link Component.should show the image\" />\r\n        <item itemvalue=\"Vitest.App Store Link Component.should show the image\" />\r\n        <item itemvalue=\"Vitest.Website Link Component\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e07d227e-968c-4019-8516-3f207b2ccfb7\" name=\"Changes\" comment=\"\" />\r\n      <created>1701895176422</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1701895176422</updated>\r\n      <workItem from=\"1701895178103\" duration=\"1372000\" />\r\n      <workItem from=\"1701903929256\" duration=\"1162000\" />\r\n      <workItem from=\"1701958310823\" duration=\"2637000\" />\r\n      <workItem from=\"1701965775726\" duration=\"2551000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"add tests for links\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"add tests for links\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f7bdb285266e97dd3243fbfeca962a87ff93cd85)
++++ b/.idea/workspace.xml	(date 1702227384642)
+@@ -7,20 +7,8 @@
+     <list default="true" id="e07d227e-968c-4019-8516-3f207b2ccfb7" name="Changes" comment="add tests for links">
+       <change afterPath="$PROJECT_DIR$/app/api/contact/route.ts" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/components/contact/contact-form.tsx" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/components/general/github-link.test.tsx" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/components/general/play-store-link.test.tsx" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/components/general/website-link.test.tsx" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/types/send-mail-type.ts" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/app/[locale]/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/contact/page.tsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/components/general/app-store-link.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/general/app-store-link.test.tsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/components/general/github-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/general/github-link.tsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/components/general/play-store-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/general/play-store-link.tsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/components/general/website-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/general/website-link.tsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/messages/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/de.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/en.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -44,30 +32,30 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "Vitest.All Tests.executor": "Run",
+-    "Vitest.App Store Link Component.executor": "Run",
+-    "Vitest.App Store Link Component.should show the image.executor": "Run",
+-    "Vitest.GitHub Link Component.should show the image.executor": "Run",
+-    "Vitest.Website Link Component.executor": "Run",
+-    "Vitest.adds 1 + 2 to equal 3.executor": "Run",
+-    "git-widget-placeholder": "main",
+-    "last_opened_file_path": "E:/Coding/personal-webpage/components/general",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "npm.dev.executor": "Run",
+-    "npm.test.executor": "Run",
+-    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
+-    "ts.external.directory.path": "E:\\Coding\\personal-webpage\\node_modules\\typescript\\lib",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;Vitest.All Tests.executor&quot;: &quot;Run&quot;,
++    &quot;Vitest.App Store Link Component.executor&quot;: &quot;Run&quot;,
++    &quot;Vitest.App Store Link Component.should show the image.executor&quot;: &quot;Run&quot;,
++    &quot;Vitest.GitHub Link Component.should show the image.executor&quot;: &quot;Run&quot;,
++    &quot;Vitest.Website Link Component.executor&quot;: &quot;Run&quot;,
++    &quot;Vitest.adds 1 + 2 to equal 3.executor&quot;: &quot;Run&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
++    &quot;last_opened_file_path&quot;: &quot;E:/Coding/personal-webpage/components/general&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
++    &quot;npm.test.executor&quot;: &quot;Run&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.TypeScript&quot;,
++    &quot;ts.external.directory.path&quot;: &quot;E:\\Coding\\personal-webpage\\node_modules\\typescript\\lib&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="E:\Coding\personal-webpage\components\general" />
+@@ -160,7 +148,18 @@
+       <workItem from="1701903929256" duration="1162000" />
+       <workItem from="1701958310823" duration="2637000" />
+       <workItem from="1701965775726" duration="2551000" />
++      <workItem from="1701968344070" duration="56000" />
++      <workItem from="1701970382182" duration="661000" />
+     </task>
++    <task id="LOCAL-00001" summary="add tests for links">
++      <option name="closed" value="true" />
++      <created>1701968363102</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1701968363102</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">

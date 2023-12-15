@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e07d227e-968c-4019-8516-3f207b2ccfb7" name="Changes" comment="add tests for links">
-      <change afterPath="$PROJECT_DIR$/app/api/contact/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/contact/contact-form.tsx" afterDir="false" />
+    <list default="true" id="e07d227e-968c-4019-8516-3f207b2ccfb7" name="Changes" comment="add test file for api routes">
+      <change afterPath="$PROJECT_DIR$/domain/usecases/email.usecases.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/usecases/email.usecases.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/[locale]/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[locale]/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/contact/route.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/contact/route.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/contact/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/contact/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +19,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -32,30 +40,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Vitest.All Tests.executor&quot;: &quot;Run&quot;,
-    &quot;Vitest.App Store Link Component.executor&quot;: &quot;Run&quot;,
-    &quot;Vitest.App Store Link Component.should show the image.executor&quot;: &quot;Run&quot;,
-    &quot;Vitest.GitHub Link Component.should show the image.executor&quot;: &quot;Run&quot;,
-    &quot;Vitest.Website Link Component.executor&quot;: &quot;Run&quot;,
-    &quot;Vitest.adds 1 + 2 to equal 3.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Coding/personal-webpage/components/general&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.test.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.TypeScript&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\Coding\\personal-webpage\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Vitest.All Tests.executor": "Run",
+    "Vitest.App Store Link Component.executor": "Run",
+    "Vitest.App Store Link Component.should show the image.executor": "Run",
+    "Vitest.Email Use Cases.call ifEmailValidFunction and test if it returns true if right email is passed.executor": "Run",
+    "Vitest.Email Use Cases.executor": "Run",
+    "Vitest.GitHub Link Component.should show the image.executor": "Run",
+    "Vitest.Send Email Route.executor": "Run",
+    "Vitest.Send Email Route.should return 500 if email is wrong.executor": "Run",
+    "Vitest.Website Link Component.executor": "Run",
+    "Vitest.adds 1 + 2 to equal 3.executor": "Run",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "E:/Coding/chattyevent-api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.test.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
+    "ts.external.directory.path": "E:\\Coding\\personal-webpage\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Coding\personal-webpage\components\general" />
@@ -64,32 +76,58 @@
       <recent name="E:\Coding\personal-webpage\app\api\contact" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
-    <configuration name="App Store Link Component.should show the image" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Vitest.Send Email Route">
+    <configuration name="Email Use Cases" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
       <working-dir value="$PROJECT_DIR$" />
       <vitest-options value="--run" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/components/general/app-store-link.test.tsx" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/domain/usecases/email.usecases.test.ts" />
       <test-names>
-        <test-name value="App Store Link Component" />
-        <test-name value="should show the image" />
+        <test-name value="Email Use Cases" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="GitHub Link Component.should show the image" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+    <configuration name="Email Use Cases.call ifEmailValidFunction and test if it returns true if right email is passed" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
       <working-dir value="$PROJECT_DIR$" />
       <vitest-options value="--run" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/components/general/github-link.test.tsx" />
+      <test-file value="$PROJECT_DIR$/domain/usecases/email.usecases.test.ts" />
       <test-names>
-        <test-name value="GitHub Link Component" />
-        <test-name value="should show the image" />
+        <test-name value="Email Use Cases" />
+        <test-name value="call ifEmailValidFunction and test if it returns true if right email is passed" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Send Email Route" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/app/api/contact/route.test.tsx" />
+      <test-names>
+        <test-name value="Send Email Route" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Send Email Route.should return 500 if email is wrong" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/app/api/contact/route.test.tsx" />
+      <test-names>
+        <test-name value="Send Email Route" />
+        <test-name value="should return 500 if email is wrong" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -106,32 +144,12 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
-        <item itemvalue="npm.test" />
-        <item itemvalue="Vitest.GitHub Link Component.should show the image" />
-        <item itemvalue="Vitest.App Store Link Component.should show the image" />
+        <item itemvalue="Vitest.Send Email Route" />
+        <item itemvalue="Vitest.Send Email Route.should return 500 if email is wrong" />
+        <item itemvalue="Vitest.Email Use Cases" />
+        <item itemvalue="Vitest.Email Use Cases.call ifEmailValidFunction and test if it returns true if right email is passed" />
         <item itemvalue="Vitest.Website Link Component" />
       </list>
     </recent_temporary>
@@ -150,6 +168,10 @@
       <workItem from="1701965775726" duration="2551000" />
       <workItem from="1701968344070" duration="56000" />
       <workItem from="1701970382182" duration="661000" />
+      <workItem from="1702230527386" duration="170000" />
+      <workItem from="1702398084525" duration="25000" />
+      <workItem from="1702594213281" duration="396000" />
+      <workItem from="1702648901868" duration="1393000" />
     </task>
     <task id="LOCAL-00001" summary="add tests for links">
       <option name="closed" value="true" />
@@ -159,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701968363102</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add test file for api routes">
+      <option name="closed" value="true" />
+      <created>1702594602888</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702594602888</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +197,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add tests for links" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tests for links" />
+    <MESSAGE value="add test file for api routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test file for api routes" />
   </component>
 </project>
