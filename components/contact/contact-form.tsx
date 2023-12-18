@@ -23,6 +23,7 @@ export default function ContactForm() {
     message: "",
     title: "",
     sendFromEmail: "",
+    testing: false
   })
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -59,7 +60,8 @@ export default function ContactForm() {
         message: "",
         title: "",
         sendFromEmail: "",
-        phoneNumber: ""
+        phoneNumber: "",
+        testing: false
       });
     }
   }

@@ -9,7 +9,8 @@ describe("Send Email Route", () => {
       message: "Test Message",
       title: "Test Title",
       sendFromEmail: "marlon",
-      phoneNumber: "Test"
+      phoneNumber: "Test",
+      testing: true,
     }
     const { req } = createMocks({ body: data, method: "POST" })
     const response = await POST(req)
@@ -21,7 +22,8 @@ describe("Send Email Route", () => {
       message: "Test Message",
       title: "Test Title",
       sendFromEmail: "mar.qwaefin@outlook.de",
-      phoneNumber: "Test"
+      phoneNumber: "Test",
+      testing: true,
     }
     const { req } = createMocks({ body: data, method: "POST" })
     const response = await POST(req)
@@ -33,11 +35,13 @@ describe("Send Email Route", () => {
       message: "Test Message",
       title: "Test Title",
       sendFromEmail: "Tecdsfst",
-      phoneNumber: "Tedft"
+      phoneNumber: "Tedft",
+      testing: true,
     }
-    const { req } = createMocks({ body: data, method: "POST" })
+    const { req } = createMocks({ body: data, method: "POST", headers: { "Content-Type": "application/json" } })
     const response = await POST(req)
     const bodyData = await response.json()
+
     expect(bodyData).toEqual({
       messageError: false,
       phoneNumberError: true,
@@ -50,6 +54,7 @@ describe("Send Email Route", () => {
       message: "Test Message",
       title: "Test Title",
       sendFromEmail: "marlon.wiss@outlook.de",
+      testing: true,
     }
     const { req } = createMocks({ body: data, method: "POST" })
     const response = await POST(req)
@@ -61,7 +66,8 @@ describe("Send Email Route", () => {
       message: "Test Message",
       title: "Test Title",
       sendFromEmail: "mar.qwaefin@outlook.de",
-      phoneNumber: ""
+      phoneNumber: "",
+      testing: true,
     }
     const { req } = createMocks({ body: data, method: "POST" })
     const response = await POST(req)

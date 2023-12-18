@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e07d227e-968c-4019-8516-3f207b2ccfb7" name="Changes" comment="more unit tests and commenting">
-      <change afterPath="$PROJECT_DIR$/types/contact-route-response-type.ts" afterDir="false" />
+    <list default="true" id="e07d227e-968c-4019-8516-3f207b2ccfb7" name="Changes" comment="error handling and more unit testing">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_12_2023_17_56_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_12_2023_17_56__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_10_12_2023_17_56_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_10_12_2023_17_56__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api/contact/route.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/contact/route.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/contact/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/contact/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/contact/contact-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/contact/contact-form.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,36 +46,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Vitest.All Tests.executor": "Run",
-    "Vitest.App Store Link Component.executor": "Run",
-    "Vitest.App Store Link Component.should show the image.executor": "Run",
-    "Vitest.Email Use Cases.call ifEmailValidFunction and test if it returns true if right email is passed.executor": "Run",
-    "Vitest.Email Use Cases.executor": "Run",
-    "Vitest.GitHub Link Component.should show the image.executor": "Run",
-    "Vitest.Send Email Route.executor": "Run",
-    "Vitest.Send Email Route.should return 200 if phoneNumber is empty.executor": "Run",
-    "Vitest.Send Email Route.should return 500 if email is wrong.executor": "Run",
-    "Vitest.Validation Use Cases.executor": "Run",
-    "Vitest.Website Link Component.executor": "Run",
-    "Vitest.adds 1 + 2 to equal 3.executor": "Run",
-    "git-widget-placeholder": "develop",
-    "last_opened_file_path": "E:/Coding/chattyevent-api",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "npm.test.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.sourceCode.TypeScript",
-    "ts.external.directory.path": "E:\\Coding\\personal-webpage\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Vitest.All Tests.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.App Store Link Component.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.App Store Link Component.should show the image.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.Email Use Cases.call ifEmailValidFunction and test if it returns true if right email is passed.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.Email Use Cases.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.GitHub Link Component.should show the image.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.Send Email Route.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.Send Email Route.should return 200 if phoneNumber is empty.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.Send Email Route.should return 500 if email is wrong.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.Validation Use Cases.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.Website Link Component.executor&quot;: &quot;Run&quot;,
+    &quot;Vitest.adds 1 + 2 to equal 3.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Coding/chattyevent-api&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.test.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.TypeScript&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\Coding\\personal-webpage\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Coding\personal-webpage\components\general" />
@@ -182,7 +183,8 @@
       <workItem from="1702656357599" duration="1017000" />
       <workItem from="1702658804963" duration="139000" />
       <workItem from="1702667862079" duration="8000" />
-      <workItem from="1702680679472" duration="2909000" />
+      <workItem from="1702680679472" duration="2940000" />
+      <workItem from="1702835107616" duration="154000" />
     </task>
     <task id="LOCAL-00001" summary="add tests for links">
       <option name="closed" value="true" />
@@ -208,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702657366918</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="error handling and more unit testing">
+      <option name="closed" value="true" />
+      <created>1702683623851</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702683623852</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +228,7 @@
     <MESSAGE value="add tests for links" />
     <MESSAGE value="add test file for api routes" />
     <MESSAGE value="more unit tests and commenting" />
-    <option name="LAST_COMMIT_MESSAGE" value="more unit tests and commenting" />
+    <MESSAGE value="error handling and more unit testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="error handling and more unit testing" />
   </component>
 </project>

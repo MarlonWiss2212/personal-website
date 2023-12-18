@@ -1,13 +1,16 @@
 import nodemailer from 'nodemailer'
 import {SendMailType} from "@/types/send-mail-type";
-import {NextResponse} from "next/server";
+import {NextRequest, NextResponse} from "next/server";
 import { ValidationUsecases } from "../../../domain/usecases/validation.usecases";
 import { ContactRouteResponseType } from "@/types/contact-route-response-type";
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
   try {
     const validationUseCases = new ValidationUsecases()
-    const emailData: SendMailType = await request.json()
+    if(request.body == null) {
+      throw new Error("The Request body is not allowed to be empty")
+    }
+    const emailData: SendMailType = request.body as any as SendMailType
 
     let responseData: ContactRouteResponseType = {
       messageError: false,
@@ -29,7 +32,8 @@ export async function POST(request: Request) {
       return NextResponse.json(responseData, { status: 500 })
     }
 
-    const transporter = nodemailer.createTransport({
+    if(emailData.testing == false) {
+      const transporter = nodemailer.createTransport({
         host: process.env.EMAIL_SERVICE,
         port: 465,
         secure: true,
@@ -37,16 +41,17 @@ export async function POST(request: Request) {
           user: process.env.EMAIL_USERNAME,
           pass: process.env.EMAIL_PASSWORD
         },
-    })
-    await transporter.sendMail({
-      from: process.env.EMAIL_SEND_FROM,
-      to: process.env.EMAIL_SEND_TO,
-      subject: emailData.title,
-      text: `${emailData.sendFromEmail}, ${emailData.phoneNumber}: ${emailData.message}`,
-      html: `${emailData.sendFromEmail}, ${emailData.phoneNumber}: ${emailData.message}`,
-    })
+      })
+      await transporter.sendMail({
+        from: process.env.EMAIL_SEND_FROM,
+        to: process.env.EMAIL_SEND_TO,
+        subject: emailData.title,
+        text: `${emailData.sendFromEmail}, ${emailData.phoneNumber}: ${emailData.message}`,
+        html: `${emailData.sendFromEmail}, ${emailData.phoneNumber}: ${emailData.message}`,
+      })
+    }
     return NextResponse.json(null, { status: 200 })
   } catch (error) {
-    return NextResponse.json(null, { status: 500 })
+    return NextResponse.json(error, { status: 500 })
   }
 }

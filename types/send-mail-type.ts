@@ -1,6 +1,7 @@
 export interface SendMailType {
-    sendFromEmail: string
-    title: string,
-    message: string,
-    phoneNumber?: string
+  testing: boolean
+  sendFromEmail: string,
+  title: string,
+  message: string,
+  phoneNumber?: string
 }
