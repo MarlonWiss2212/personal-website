@@ -27,7 +27,7 @@
     "title1": "Hallo, mein Name ist",
     "title2": "Marlon Wißkirchen",
     "title3": "Ich bin Softwareentwickler",
-    "text": "Ich bin ein 18 Jähriger Softwareentwickler aus Rheinland-Pfalz, Deutschland."
+    "text": "Ich bin ein {age} Jähriger Softwareentwickler aus Rheinland-Pfalz, Deutschland."
   },
   "resume": {
     "title": "Lebenslauf",

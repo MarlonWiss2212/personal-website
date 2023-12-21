@@ -27,7 +27,7 @@
     "title1": "Hi, my name is",
     "title2": "Marlon Wißkirchen",
     "title3": "I'm a software engineer",
-    "text": "I am an 18 year old software engineer from Rhineland-Palatinate, Germany."
+    "text": "I am an {age} year old software engineer from Rhineland-Palatinate, Germany."
   },
   "resume": {
     "title": "Resume",
