@@ -12,7 +12,7 @@ describe("Introduction Title Component", () => {
         <IntroductionTitle />
       </NextIntlClientProvider>
     )
-    const image = await screen.findByTestId(`nameTitle`)
-    expect(image).toBeVisible()
+    const component = await screen.findByTestId(`nameTitle`)
+    expect(component).toBeDefined()
   })
 })

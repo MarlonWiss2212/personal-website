@@ -10,29 +10,21 @@ export async function POST(request: NextRequest) {
     if(request.body == null) {
       throw new Error("The Request body is not allowed to be empty")
     }
-    const emailData: SendMailType = request.body as any as SendMailType
+    const emailData: SendMailType = await request.json()
 
+    console.log(emailData)
     let responseData: ContactRouteResponseType = {
       messageError: false,
-      phoneNumberError: false,
+      phoneNumberError: emailData.phoneNumber != null && emailData.phoneNumber != "" ? !validationUseCases.isPhoneNumberValid(emailData.phoneNumber) : false,
       titleError: false,
-      sendFromEmailError: false,
-    }
-    const isEmailValid = validationUseCases.isEmailValid(emailData.sendFromEmail)
-    const isPhoneNumberValid = emailData.phoneNumber != undefined && emailData.phoneNumber != "" ? validationUseCases.isPhoneNumberValid(emailData.phoneNumber) : undefined
-
-    if (!isEmailValid) {
-      responseData.sendFromEmailError = true
-    }
-    if (isPhoneNumberValid != undefined && !isPhoneNumberValid) {
-      responseData.phoneNumberError = true
+      sendFromEmailError: !validationUseCases.isEmailValid(emailData.sendFromEmail),
     }
 
     if(responseData.phoneNumberError || responseData.titleError || responseData.messageError || responseData.sendFromEmailError) {
       return NextResponse.json(responseData, { status: 500 })
     }
 
-    if(emailData.testing == false) {
+    if(!emailData.testing) {
       const transporter = nodemailer.createTransport({
         host: process.env.EMAIL_SERVICE,
         port: 465,
