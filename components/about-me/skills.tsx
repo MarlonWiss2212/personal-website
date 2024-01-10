@@ -48,10 +48,10 @@ export default function Skills() {
             <h3 className="text-xl font-bold">Backend / API</h3>
             <div className="flex flex-wrap gap-2">
               <Chip color="primary">NestJS</Chip>
-              <Chip color="primary">REST Api</Chip>
+              <Chip color="primary">REST API</Chip>
               <Chip color="primary">Websockets</Chip>
-              <Chip color="primary">GraphQL Api</Chip>
-              <Chip color="primary">Node JS</Chip>
+              <Chip color="primary">GraphQL API</Chip>
+              <Chip color="primary">NodeJS</Chip>
               <Chip color="primary">ExpressJs</Chip>
             </div>
           </div>
