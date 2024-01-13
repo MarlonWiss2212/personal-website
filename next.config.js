@@ -5,9 +5,6 @@ const withNextIntl = require('next-intl/plugin')(
 );
 
 const nextConfig = withNextIntl({
-  experimental: {
-    serverActions: true,
-  },
   images: {
     remotePatterns: [
       {

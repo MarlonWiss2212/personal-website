@@ -1,7 +1,7 @@
+import { usePathname, useRouter } from "@/navigation"
 import { Select, SelectItem } from "@nextui-org/select"
 import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
-import { useRouter, usePathname } from "next-intl/client"
 import { ChangeEvent } from "react"
 
 const getFlagComponent = (locale: string) => {
