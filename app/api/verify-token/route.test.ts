@@ -1,8 +1,9 @@
-import { POST } from "./route"
+import { GET } from "./route"
 import { createMocks } from "node-mocks-http"
 import { expect } from "vitest";
 import jwt from "jsonwebtoken";
 import { loadEnvConfig } from '@next/env'
+import { cookies } from "next/headers";
 
 describe("Verify Login Route", () => {
   beforeEach( () => {
@@ -10,14 +11,16 @@ describe("Verify Login Route", () => {
   });
 
   it("should return 401 if no token is provided", async () => {
-    const { req } = createMocks({ body: { jwt: "" }, method: "POST" })
-    const response = await POST(req)
+    const { req } = createMocks({ method: "GET" })
+    //mock cookies
+    const response = await GET(req)
     expect(response.status).toBe(401)
   })
   it("should return 200 if right token is provided", async () => {
     const token = jwt.sign({}, process.env.PAGE_PASSWORD!, { expiresIn: 60 * 60 * 24 * 31 })
-    const { req } = createMocks({ body: { jwt: token }, method: "POST" })
-    const response = await POST(req)
+    //mock cookies
+    const { req } = createMocks({ headers: { cookie: `${process.env.PASSWORD_COOKIE_NAME}=${token}` }, method: "GET" });
+    const response = await GET(req)
     expect(response.status).toBe(200)
   })
 })

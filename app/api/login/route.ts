@@ -10,9 +10,8 @@ export async function POST(request: Request) {
     return new NextResponse("incorrect password", { status: 401 })
   }
 
-  const token = jwt.sign({}, "password", { expiresIn: 60 * 60 * 24 * 31 })
-  
-  const cookie = serialize(process.env.PAGE_PASSWORD!, token, {
+  const token = jwt.sign({}, process.env.PAGE_PASSWORD!, { expiresIn: 60 * 60 * 24 * 31 })
+  const cookie = serialize(process.env.PASSWORD_COOKIE_NAME!, token, {
     httpOnly: true,
     path: "/",
   });
