@@ -4,7 +4,8 @@ import RootLayoutComponent from "@/components/layout/root-layout-component"
 import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/react"
 import { NextIntlClientProvider } from "next-intl"
-import {notFound} from 'next/navigation';
+import {notFound, usePathname} from 'next/navigation';
+import { cookies } from "next/headers"
 
 export const metadata: Metadata = {
   title: "Marlon Wißkirchen",

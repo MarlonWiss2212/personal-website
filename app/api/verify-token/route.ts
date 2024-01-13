@@ -7,6 +7,7 @@ export async function GET(req: NextRequest) {
 
   let response = new NextResponse("invalid token", { status: 401 })
   if(token?.value != undefined) {
+    //TODO: make usecases for verify
     jwt.verify(token.value, process.env.PAGE_PASSWORD!, (error, data) => {
       if(error != null) {
         cookies().delete(process.env.PASSWORD_COOKIE_NAME!)
