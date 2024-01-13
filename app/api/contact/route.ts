@@ -10,9 +10,8 @@ export async function POST(request: NextRequest) {
     if(request.body == null) {
       throw new Error("The Request body is not allowed to be empty")
     }
-    const emailData: SendMailType = await request.json()
+    const emailData: SendMailType = request?.json != null ? await request.json() : request.body;
 
-    console.log(emailData)
     let responseData: ContactRouteResponseType = {
       messageError: false,
       phoneNumberError: emailData.phoneNumber != null && emailData.phoneNumber != "" ? !validationUseCases.isPhoneNumberValid(emailData.phoneNumber) : false,

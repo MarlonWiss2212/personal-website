@@ -1,14 +1,19 @@
+import { cookies } from "next/headers";
 import PasswordPromptDialog from "../modal/password-prompt-dialog";
-import { cookies } from 'next/headers'
 
-export default function PasswordProtectedRoute({ children }: { children: React.ReactNode }) {
-  const cookiesStore = cookies();
-  const loginCookies = cookiesStore.get(process.env.PASSWORD_COOKIE_NAME!);
-  const isLoggedIn = !!loginCookies?.value;
+export default async function PasswordProtectedRoute({ children }: { children: React.ReactNode }) {
+  const cookie = cookies().get(process.env.PASSWORD_COOKIE_NAME!)
   
-  if (!isLoggedIn) {
+  const response: Response = await fetch("/api/verify-token", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ "jwt": cookie?.value })
+  })
+
+  if (response.status != 200) {
+    cookies().delete(process.env.PASSWORD_COOKIE_NAME!)
     return <PasswordPromptDialog />;
   } else {
-    return children
+    return children as JSX.Element
   }
 }

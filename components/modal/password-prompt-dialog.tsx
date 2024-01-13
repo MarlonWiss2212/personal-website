@@ -12,7 +12,7 @@ export default function PasswordPromptDialog() {
     const request = await fetch(e.currentTarget.action, {
       body: JSON.stringify({password}),
       headers: {"Content-Type": "application/json"},
-      method: "post",
+      method: e.currentTarget.method,
     });
 
     if (request.status !== 200) return;
@@ -21,7 +21,7 @@ export default function PasswordPromptDialog() {
 
   return (
     <div className='flex w-full h-full items-center justify-center'>
-      <form method='POST' action={"/api"} onSubmit={handleSubmit} className="flex flex-col items-center justify-center gap-4 overscroll-none h-full w-full md:w-2/5">
+      <form method="POST" action={"/api/login"} onSubmit={handleSubmit} className="flex flex-col items-center justify-center gap-4 overscroll-none h-full w-full md:w-2/5">
         <Input
           type="password"
           id="password"

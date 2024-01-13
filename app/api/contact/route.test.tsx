@@ -2,8 +2,13 @@ import { POST } from "./route"
 import { SendMailType } from "@/types/send-mail-type";
 import { createMocks } from "node-mocks-http"
 import { expect } from "vitest";
+import { loadEnvConfig } from '@next/env'
 
 describe("Send Email Route", () => {
+  beforeEach( () => {
+    loadEnvConfig(process.cwd())
+  });
+  
   it("should return 500 if email is wrong", async () => {
     const data: SendMailType = {
       message: "Test Message",
