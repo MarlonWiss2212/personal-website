@@ -16,7 +16,7 @@ export default function PasswordProtectedRoute({ children }: { children: React.R
   }, [])
 
   if (response?.status != 200) {
-    return <PasswordPromptDialog />;
+    return <PasswordPromptDialog setResponse={setResponse} />;
   } else {
     return children as JSX.Element
   }

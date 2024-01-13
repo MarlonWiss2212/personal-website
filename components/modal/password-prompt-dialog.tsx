@@ -1,9 +1,9 @@
 "use client";
 import { Button, Input } from '@nextui-org/react';
 import { useTranslations } from 'next-intl';
-import React, { useState } from 'react';
+import React, { Dispatch, SetStateAction, useState } from 'react';
 
-export default function PasswordPromptDialog() {
+export default function PasswordPromptDialog({ setResponse }: { setResponse: Dispatch<SetStateAction<Response | undefined>> }) {
   const t = useTranslations("general")
   const [password, setPassword] = useState('');
 
@@ -14,9 +14,7 @@ export default function PasswordPromptDialog() {
       headers: {"Content-Type": "application/json"},
       method: e.currentTarget.method,
     });
-
-    if (request.status !== 200) return;
-    else window.location.reload();
+    setResponse(request)
   }
 
   return (
