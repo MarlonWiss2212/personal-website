@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server';
 import createIntlMiddleware from 'next-intl/middleware';
+import jwt from "jsonwebtoken"
 
 export const locales =  ['en', 'de']
 
@@ -26,13 +27,11 @@ export default async function middleware(request: NextRequest) {
   );
   
   const hasCookie = request.cookies.has(process.env.PASSWORD_COOKIE_NAME!);
-  const url = request.nextUrl.clone();
  
   if (password === process.env.PAGE_PASSWORD && !hasCookie) {
-    response.cookies.set(`${process.env.PASSWORD_COOKIE_NAME}`, "true");
-    return response;
+    //TODO: make usecases for login
+    response.cookies.set(`${process.env.PASSWORD_COOKIE_NAME}`, jwt.sign({}, process.env.PAGE_PASSWORD!, { expiresIn: 60 * 60 * 24 * 31 }));
   }
- 
   return response;
 }
  
