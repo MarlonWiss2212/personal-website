@@ -1,22 +1,21 @@
-import jwt from "jsonwebtoken"
 import { NextRequest, NextResponse } from "next/server";
 import { cookies } from 'next/headers'
+import { AuthenticationUsecases } from "./../../../domain/usecases/authentication.usecases";
 
 export async function GET(req: NextRequest) {
+  const authenticationUseCases = new AuthenticationUsecases()
   const token = req.cookies.get(process.env.PASSWORD_COOKIE_NAME!)
 
-  let response = new NextResponse("invalid token", { status: 401 })
-  if(token?.value != undefined) {
-    //TODO: make usecases for verify
-    jwt.verify(token.value, process.env.PAGE_PASSWORD!, (error, data) => {
-      if(error != null) {
-        cookies().delete(process.env.PASSWORD_COOKIE_NAME!)
-        response = new NextResponse("invalid token", { status: 401 })
-      } else {
-        response = new NextResponse("valid token", { status: 200 })
-      }
-    })
+  if(token?.value == null) {
+    return new NextResponse("invalid token", { status: 401 })
   }
 
-  return response
+  const boolean = authenticationUseCases.verifyToken(token.value, () => {
+    cookies().delete(process.env.PASSWORD_COOKIE_NAME!)
+  })
+
+  if(boolean) {
+    return new NextResponse("valid token", { status: 200 })
+  }
+  return new NextResponse("invalid token", { status: 401 })
 }

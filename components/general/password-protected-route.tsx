@@ -10,7 +10,6 @@ export default function PasswordProtectedRoute({ children }: { children: React.R
       method: "GET",
       headers: {"Content-Type": "application/json" },
     }).then(res => {
-      console.log(res.status)
       setResponse(res)
     })
   }, [])
