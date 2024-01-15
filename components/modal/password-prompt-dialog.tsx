@@ -21,6 +21,7 @@ export default function PasswordPromptDialog({ setResponse }: { setResponse: Dis
     <div className='flex w-full h-full items-center justify-center'>
       <form method="POST" action={"/api/login"} onSubmit={handleSubmit} className="flex flex-col items-center justify-center gap-4 overscroll-none h-full w-full md:w-2/5">
         <Input
+          data-testid="passwordPromptInput"
           type="password"
           id="password"
           placeholder={t("password")}
