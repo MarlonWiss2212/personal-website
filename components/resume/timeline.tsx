@@ -1,4 +1,3 @@
-"use server"
 import { useTranslations } from "next-intl"
 import TimelineDateBox from "./timeline-date-box"
 import { Certificate } from "@/types/certificate-type"
