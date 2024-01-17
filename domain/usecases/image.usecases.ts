@@ -1,11 +1,11 @@
 import S3 from "aws-sdk/clients/s3"
 
 export class ImageUsecases {
-  private readonly s3 = new S3({
-    region: "eu-central-1",
-    accessKeyId: process.env.ACCESS_KEY_AWS,
-    secretAccessKey: process.env.SECRET_KEY_AWS
-  })
+  private readonly s3;
+
+  constructor(s3Client: S3) {
+    this.s3 = s3Client
+  }
   
   /**
    * 

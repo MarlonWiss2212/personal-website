@@ -41,6 +41,3 @@ describe("Password Protected Route Component", () => {
     expect(children).toBeVisible();
   });
 });
-
-
-//TODO: AWS BUCKET

@@ -2,11 +2,16 @@ import { useTranslations } from "next-intl"
 import TimelineDateBox from "./timeline-date-box"
 import { Certificate } from "@/types/certificate-type"
 import { ImageUsecases } from "@/domain/usecases/image.usecases"
+import S3 from "aws-sdk/clients/s3"
 
 export default async function Timeline() {
   const t = useTranslations("resume.timeline")
   const tMonth = useTranslations("month")
-  const imageUsecases = new ImageUsecases()
+  const imageUsecases = new ImageUsecases(new S3({
+    region: "eu-central-1",
+    accessKeyId: process.env.ACCESS_KEY_AWS,
+    secretAccessKey: process.env.SECRET_KEY_AWS
+  }))
 
   const link = await imageUsecases.getImage("certificate_2023.pdf")
   const certificates: Certificate[] = [{ link: link, name: t("box4.certificates.2023Text") }]
