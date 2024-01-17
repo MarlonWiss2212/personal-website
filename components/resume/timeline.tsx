@@ -1,12 +1,16 @@
+"use server"
 import { useTranslations } from "next-intl"
 import TimelineDateBox from "./timeline-date-box"
 import { Certificate } from "@/types/certificate-type"
+import { ImageUsecases } from "@/domain/usecases/image.usecases"
 
-export default function Timeline() {
+export default async function Timeline() {
   const t = useTranslations("resume.timeline")
   const tMonth = useTranslations("month")
+  const imageUsecases = new ImageUsecases()
 
-  const certificates: Certificate[] = [{ link: "/certificate_2023.pdf", name: t("box4.certificates.2023Text") }]
+  const link = await imageUsecases.getImage("certificate_2023.pdf")
+  const certificates: Certificate[] = [{ link: link, name: t("box4.certificates.2023Text") }]
 
   return (
     <div className="flex flex-col flex-grow overflow-y-scroll text-white md:px-10 cursor-default lg:pb-14">
