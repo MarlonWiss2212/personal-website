@@ -2,6 +2,15 @@ import PersonalData from "@/components/about-me/personal-data"
 import Skills from "@/components/about-me/skills"
 import AnimatedTitle from "@/components/general/animated-title"
 import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
+
+export async function generateMetadata({params: {locale}}: any) {
+  const t = await getTranslations({locale: locale, namespace: "aboutMe.metadata"})
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
+}
 
 export default function AboutMe() {
   const t = useTranslations("aboutMe")

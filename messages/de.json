@@ -30,6 +30,10 @@
     "text": "Ich bin ein {age} Jähriger Softwareentwickler aus Rheinland-Pfalz, Deutschland."
   },
   "resume": {
+    "metadata": {
+      "title": "Lebenslauf von Marlon Wißkirchen",
+      "description": "Auf dieser Seite können Sie den Lebenslauf von Marlon Wißkirchen sehen"
+    },
     "title": "Lebenslauf",
     "timeline": {
       "certificateTitle": "Zeugnisse",
@@ -60,6 +64,10 @@
   },
   "projects": {
     "title": "Projekte",
+    "metadata": {
+      "title": "Projekte von Marlon Wißkirchen",
+      "description": "Auf dieser Seite können Sie die Projekte von Marlon Wißkirchen sehen"
+    },
     "zewothermApp": {
       "title": "Zewotherm Produktwelt App",
       "message": "Während meiner Ausbildung habe ich eine App entwickelt, um Kunden Informationen über die Unternehmensprodukte zu zeigen. Die App wurde mit ReactNative und Expo entwickelt und im Januar 2022 veröffentlicht."
@@ -75,6 +83,10 @@
   },
   "aboutMe": {
     "title": "Über mich",
+    "metadata": {
+      "title": "Über Marlon Wißkirchen",
+      "description": "Auf dieser Seite können Sie details zu Marlon Wißkirchen sehen"
+    },
     "personalData": {
       "degree": "Mittlere Reife (FIAE Ausbildung Abschluss Mitte 2024)"
     },
@@ -92,6 +104,10 @@
   },
   "contact": {
     "title": "Kontakt",
+    "metadata": {
+      "title": "Kontakdaten von Marlon Wißkirchen",
+      "description": "Auf dieser Seite können Sie die Kontaktdaten von Marlon Wißkirchen sehen"
+    },
     "contactForm": {
       "sendAMessage": "Sende eine Nachricht",
       "email": "E-Mail",

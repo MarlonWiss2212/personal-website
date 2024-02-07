@@ -2,6 +2,15 @@ import ProjectBox from "@/components/projects/project-box"
 import { ProjectType } from "@/types/project-type"
 import AnimatedTitle from "@/components/general/animated-title"
 import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
+
+export async function generateMetadata({params: {locale}}: any) {
+  const t = await getTranslations({locale: locale, namespace: "projects.metadata"})
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
+}
 
 export default function Projects() {
   const t = useTranslations("projects")

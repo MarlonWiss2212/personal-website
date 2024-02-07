@@ -31,6 +31,10 @@
   },
   "resume": {
     "title": "Resume",
+    "metadata": {
+      "title": "Resume of Marlon Wißkirchen",
+      "description": "On this page, you can view the resume of Marlon Wißkirchen"
+    },    
     "timeline": {
       "certificateTitle": "Certificates",
       "box1": {
@@ -60,6 +64,10 @@
   },
   "projects": {
     "title": "Projects",
+    "metadata": {
+      "title": "Projects by Marlon Wißkirchen",
+      "description": "On this page, you can see the projects by Marlon Wißkirchen"
+    },    
     "zewothermApp": {
       "title": "Zewotherm Produktwelt App",
       "message": "During my Apprenticeship i developed an App for Customers to show them Infos about the Company Products. The App is developed with ReactNative and Expo and was release on January 2022"
@@ -75,6 +83,10 @@
   },
   "aboutMe": {
     "title": "About me",
+    "metadata": {
+      "title": "About Marlon Wißkirchen",
+      "description": "On this page, you can see details about Marlon Wißkirchen"
+    },    
     "personalData": {
       "degree": "Middle maturity (FIAE German Apprenticeship Degree expected in mid-2024)"
     },
@@ -92,6 +104,10 @@
   },
   "contact": {
     "title": "Contact",
+    "metadata": {
+      "title": "Contact Information from Marlon Wißkirchen",
+      "description": "On this page, you can view the contact information from Marlon Wißkirchen"
+    },    
     "contactForm": {
       "sendAMessage": "Send a message",
       "email": "Email",

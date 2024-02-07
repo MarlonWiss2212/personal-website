@@ -1,6 +1,15 @@
 import AnimatedTitle from "@/components/general/animated-title"
 import { useTranslations } from "next-intl"
 import ContactForm from "@/components/contact/contact-form";
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata({params: {locale}}: any) {
+  const t = await getTranslations({locale: locale, namespace: "contact.metadata"})
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
+}
 
 export default function Contact() {
   const t = useTranslations("contact")
