@@ -72,6 +72,10 @@
       "title": "Zewotherm Produktwelt App",
       "message": "Während meiner Ausbildung habe ich eine App entwickelt, um Kunden Informationen über die Unternehmensprodukte zu zeigen. Die App wurde mit ReactNative und Expo entwickelt und im Januar 2022 veröffentlicht."
     },
+    "weatherApp": {
+      "title": "Wetter App",
+      "message": "Zurzeit entwickle ich eine Wetter-App mit Flutter nach dem 'CleanArchitecture; Architekturdesign. Ich entwickele die App, da mir aufgefallen ist, dass es keine vernünftige Wetter App für Android mit einem guten Design gibt. Außerdem macht mir die Entwicklung mit Flutter sehr viel Spaß, deswegen fiel mir die Entscheidung nicht schwer, einfach loszulegen und diese App zu entwickeln."
+    },
     "chattyEvent": {
       "title": "ChattyEvent",
       "message": "ChattyEvent ist eine mobile plattformübergreifende App, die ich ab Herbst 2022 entwickelt habe. Mit meiner App können Sie mit Ihren Freunden chatten, Partys planen usw. Sie wurde im Frontend mit Flutter und im Backend mit NestJS, MongoDB, Kafka und AWS S3 entwickelt. Sie verwendet GraphQL anstelle einer REST-API für effizientere Anfragen. Die App ist derzeit im Google Play Store und im Apple App Store verfügbar."
@@ -110,9 +114,9 @@
     },
     "contactForm": {
       "sendAMessage": "Sende eine Nachricht",
-      "email": "E-Mail",
+      "email": "Deine/ihre E-Mail",
       "phoneNumber": "Tel.",
-      "title": "Titel",
+      "title": "Betreff",
       "message": "Nachricht",
       "success": "E-Mail erfolgreich versendet",
       "error": "Fehler beim senden der E-Mail an: marlon.wisskirchen@outlook.de"

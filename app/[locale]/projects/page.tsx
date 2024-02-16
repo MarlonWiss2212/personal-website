@@ -26,19 +26,13 @@ export default function Projects() {
       }
     },
     {
-      title: t("chattyEvent.title"),
-      message: t("chattyEvent.message"),
-      images: ["/flutter.png", "/nuxt.svg", "/nest-js.png", "/graphql.png", "/firebase-auth.png", "/mongodb.svg", "/aws-s3-icon.png", "/kafka.png"],
+      title: t("weatherApp.title"),
+      message: t("weatherApp.message"),
+      images: ["/flutter.png"],
       className: "md:col-span-2 row-span-2",
       appStore: {
-        appleLink: "https://apps.apple.com/de/app/chattyevent/id6463625762",
-        googleLink: "https://play.google.com/store/apps/details?id=com.chattyevent.chattyevent",
-        gitLink: "https://github.com/MarlonWiss2212/chattyevent_app_flutter"
+        gitLink: "https://github.com/MarlonWiss2212/weather_app"
       },
-      web: {
-        link: "https://chattyevent.com",
-        gitLink: "https://github.com/MarlonWiss2212/chattyevent-web"
-      }
     },
     { 
       title: t("personalWebsite.title"), 
@@ -47,6 +41,21 @@ export default function Projects() {
       className: "",
       web: {
         gitLink: "https://github.com/MarlonWiss2212/personal-webpage" 
+      }
+    },
+    {
+      title: t("chattyEvent.title"),
+      message: t("chattyEvent.message"),
+      images: ["/flutter.png", "/nuxt.svg", "/nest-js.png", "/graphql.png", "/firebase-auth.png", "/mongodb.svg", "/aws-s3-icon.png", "/kafka.png"],
+      className: "md:col-span-3 row-span-3",
+      appStore: {
+        appleLink: "https://apps.apple.com/de/app/chattyevent/id6463625762",
+        googleLink: "https://play.google.com/store/apps/details?id=com.chattyevent.chattyevent",
+        gitLink: "https://github.com/MarlonWiss2212/chattyevent_app_flutter"
+      },
+      web: {
+        link: "https://chattyevent.com",
+        gitLink: "https://github.com/MarlonWiss2212/chattyevent-web"
       }
     },
   ]

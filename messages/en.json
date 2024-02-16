@@ -72,6 +72,10 @@
       "title": "Zewotherm Produktwelt App",
       "message": "During my Apprenticeship i developed an App for Customers to show them Infos about the Company Products. The App is developed with ReactNative and Expo and was release on January 2022"
     },
+    "weatherApp": {
+      "title": "Weather App",
+      "message": "I am currently developing a weather app with Flutter according to the 'CleanArchitecture' architectural design. I am developing the app because I noticed that there is no decent weather app for Android with an outstanding design. I also really enjoy developing with Flutter, so it wasn't a difficult decision for me to just go ahead and develop this app."
+    },
     "chattyEvent": {
       "title": "ChattyEvent",
       "message": "ChattyEvent is an Mobile Cross-Platform app i developed starting fall 2022. With my App you can Chat with your friends plan partys etc. It's developed with Flutter in the Frontend and NestJS, MongoDB, Kafka and AWS S3 in the Backend. It uses GraphQL instead of an REST API for more efficient requests. The App is currently available in the google play store and the apple app store"
@@ -110,7 +114,7 @@
     },    
     "contactForm": {
       "sendAMessage": "Send a message",
-      "email": "Email",
+      "email": "Your email",
       "phoneNumber": "Tel.",
       "title": "Title",
       "message": "Message",
