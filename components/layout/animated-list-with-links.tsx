@@ -7,11 +7,7 @@ import { Dispatch, SetStateAction } from "react"
 
 // english always has a slash
 const transformLocale = (locale: string, withEndingSlash: boolean = true): string => {
-  if (locale == "en") {
-    return "/"
-  } else {
     return withEndingSlash ? `/${locale}/` : `/${locale}`
-  }
 }
 
 function classNames(...classes: string[]) {
