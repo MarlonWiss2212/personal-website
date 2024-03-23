@@ -78,7 +78,7 @@
     },
     "chattyEvent": {
       "title": "ChattyEvent",
-      "message": "ChattyEvent is an Mobile Cross-Platform app i developed starting fall 2022. With my App you can Chat with your friends plan partys etc. It's developed with Flutter in the Frontend and NestJS, MongoDB, Kafka and AWS S3 in the Backend. It uses GraphQL instead of an REST API for more efficient requests. The App is currently available in the google play store and the apple app store"
+      "message": "ChattyEvent is an Mobile Cross-Platform app i developed starting fall 2022. With my App you can Chat with your friends plan partys etc. It's developed with Flutter in the Frontend and NestJS, MongoDB, Kafka and AWS S3 in the Backend. It uses GraphQL instead of an REST API for more efficient requests. The App was until 3.31.2024 available in the google play store and the apple app store"
     },
     "personalWebsite": {
       "title": "Personal Website",

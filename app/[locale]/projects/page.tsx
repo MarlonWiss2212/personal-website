@@ -49,8 +49,6 @@ export default function Projects() {
       images: ["/flutter.png", "/nuxt.svg", "/nest-js.png", "/graphql.png", "/firebase-auth.png", "/mongodb.svg", "/aws-s3-icon.png", "/kafka.png"],
       className: "md:col-span-3 row-span-3",
       appStore: {
-        appleLink: "https://apps.apple.com/de/app/chattyevent/id6463625762",
-        googleLink: "https://play.google.com/store/apps/details?id=com.chattyevent.chattyevent",
         gitLink: "https://github.com/MarlonWiss2212/chattyevent_app_flutter"
       },
       web: {

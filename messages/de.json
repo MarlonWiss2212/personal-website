@@ -78,7 +78,7 @@
     },
     "chattyEvent": {
       "title": "ChattyEvent",
-      "message": "ChattyEvent ist eine mobile plattformübergreifende App, die ich ab Herbst 2022 entwickelt habe. Mit meiner App können Sie mit Ihren Freunden chatten, Partys planen usw. Sie wurde im Frontend mit Flutter und im Backend mit NestJS, MongoDB, Kafka und AWS S3 entwickelt. Sie verwendet GraphQL anstelle einer REST-API für effizientere Anfragen. Die App ist derzeit im Google Play Store und im Apple App Store verfügbar."
+      "message": "ChattyEvent ist eine mobile plattformübergreifende App, die ich ab Herbst 2022 entwickelt habe. Mit meiner App können Sie mit Ihren Freunden chatten, Partys planen usw. Sie wurde im Frontend mit Flutter und im Backend mit NestJS, MongoDB, Kafka und AWS S3 entwickelt. Sie verwendet GraphQL anstelle einer REST-API für effizientere Anfragen. Die App war bis zum 31.3.2024 im Google Play Store und im Apple App Store verfügbar."
     },
     "personalWebsite": {
       "title": "Persönliche Website",
