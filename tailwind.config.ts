@@ -11,6 +11,7 @@ const config: Config = {
       },
     },
   },
+  darkMode: ['class', '[data-mode="dark"]'],
   plugins: [
     nextui({
       defaultTheme: "dark",

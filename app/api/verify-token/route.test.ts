@@ -3,7 +3,6 @@ import { createMocks } from "node-mocks-http"
 import { expect } from "vitest";
 import jwt from "jsonwebtoken";
 import { loadEnvConfig } from '@next/env'
-import { cookies } from "next/headers";
 
 describe("Verify Login Route", () => {
   beforeEach( () => {

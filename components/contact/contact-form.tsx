@@ -80,7 +80,7 @@ export default function ContactForm() {
           <ModalHeader>{t("success")}</ModalHeader>
         </ModalContent>
       </Modal>
-      <div className="w-full mt-10">
+      <div className="w-full mt-12">
         <h2 className="text-2xl font-bold">{t("sendAMessage")}:</h2>
         <form method='POST' action={"/api/contact"} onSubmit={handleSubmit} className="grid gap-2 grid-cols-2 mt-4">
           <Input
