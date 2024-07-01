@@ -23,6 +23,7 @@ export default async function Timeline() {
       <TimelineDateBox year="2021" month={tMonth("july")} text={t("box3.description")} title={t("box3.title")} onRight={true}></TimelineDateBox>
       <TimelineDateBox year="2021" month={tMonth("august")} text={t("box4.description")} title={t("box4.title")} certificates={certificates} onRight={false}></TimelineDateBox>
       <TimelineDateBox year="2022-2023" text={t("box5.description")} title={t("box5.title")} onRight={true}></TimelineDateBox>
-    </div>
+      <TimelineDateBox year="2024" month={tMonth("july")} text={t("box6.description")} title={t("box6.title")} onRight={false}></TimelineDateBox>
+      </div>
   )
 }

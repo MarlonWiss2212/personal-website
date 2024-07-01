@@ -31,10 +31,6 @@
   },
   "resume": {
     "title": "Resume",
-    "metadata": {
-      "title": "Resume of Marlon Wißkirchen",
-      "description": "On this page, you can view the resume of Marlon Wißkirchen"
-    },    
     "timeline": {
       "certificateTitle": "Certificates",
       "box1": {
@@ -51,7 +47,7 @@
       },
       "box4": {
         "title": "Apprenticeship as an Application Developer (FIAE)",
-        "description": "I have done my apprenticeship as an Application Developer (FIAE) at ZW-Systems GmbH and completed it in June 2024. During my apprenticeship, I significantly expanded my knowledge in web development and gained valuable experience in the field of Mobile Development.",
+        "description": "I´m doing my apprenticeship as an Application Developer (FIAE) at ZW-Systems GmbH and expect to complete it in the summer 2024. During my apprenticeship, I significantly expanded my knowledge in web development and gained valuable experience in the field of Mobile Development.",
         "certificates": {
           "2023Text": "Last certificate"
         }
@@ -59,26 +55,22 @@
       "box5": {
         "title": "Development of a Flutter App alongside Apprenticeship",
         "description": "In my pursuit of continuous knowledge expansion, I developed apps with Flutter alongside my apprenticeship. These apps were created in conjunction with NestJS backends, MongoDB, Apache Kafka, and various other tools, and I successfully published them."
+      },
+      "box6": {
+        "title": "Software Developer at Denkwerk GmbH",
+        "description": "Since July 1, 2024, I have been working at Denkwerk in Cologne as a Junior Software Developer"
       }
     }
   },
   "projects": {
     "title": "Projects",
-    "metadata": {
-      "title": "Projects by Marlon Wißkirchen",
-      "description": "On this page, you can see the projects by Marlon Wißkirchen"
-    },    
     "zewothermApp": {
       "title": "Zewotherm Produktwelt App",
       "message": "During my Apprenticeship i developed an App for Customers to show them Infos about the Company Products. The App is developed with ReactNative and Expo and was release on January 2022"
     },
-    "weatherApp": {
-      "title": "Weather App",
-      "message": "I am currently developing a weather app with Flutter according to the 'CleanArchitecture' architectural design. I am developing the app because I noticed that there is no decent weather app for Android with an outstanding design. I also really enjoy developing with Flutter, so it wasn't a difficult decision for me to just go ahead and develop this app."
-    },
     "chattyEvent": {
       "title": "ChattyEvent",
-      "message": "ChattyEvent is an Mobile Cross-Platform app i developed starting fall 2022. With my App you can Chat with your friends plan partys etc. It's developed with Flutter in the Frontend and NestJS, MongoDB, Kafka and AWS S3 in the Backend. It uses GraphQL instead of an REST API for more efficient requests. The App was until 3.31.2024 available in the google play store and the apple app store"
+      "message": "ChattyEvent is an Mobile Cross-Platform app i developed starting fall 2022. With my App you can Chat with your friends plan partys etc. It's developed with Flutter in the Frontend and NestJS, MongoDB, Kafka and AWS S3 in the Backend. It uses GraphQL instead of an REST API for more efficient requests. The App is currently available in the google play store and the apple app store"
     },
     "personalWebsite": {
       "title": "Personal Website",
@@ -87,10 +79,6 @@
   },
   "aboutMe": {
     "title": "About me",
-    "metadata": {
-      "title": "About Marlon Wißkirchen",
-      "description": "On this page, you can see details about Marlon Wißkirchen"
-    },    
     "personalData": {
       "degree": "Middle maturity (FIAE German Apprenticeship Degree expected in mid-2024)"
     },
@@ -108,13 +96,9 @@
   },
   "contact": {
     "title": "Contact",
-    "metadata": {
-      "title": "Contact Information from Marlon Wißkirchen",
-      "description": "On this page, you can view the contact information from Marlon Wißkirchen"
-    },    
     "contactForm": {
       "sendAMessage": "Send a message",
-      "email": "Your email",
+      "email": "Email",
       "phoneNumber": "Tel.",
       "title": "Title",
       "message": "Message",
