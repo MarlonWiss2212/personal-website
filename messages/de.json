@@ -30,6 +30,10 @@
     "text": "Ich bin ein {age} Jähriger Softwareentwickler aus Rheinland-Pfalz, Deutschland."
   },
   "resume": {
+    "metadata": {
+      "title": "Lebenslauf von Marlon Wißkirchen",
+      "description": "Auf dieser Seite können Sie den Lebenslauf von Marlon Wißkirchen sehen"
+    },
     "title": "Lebenslauf",
     "timeline": {
       "certificateTitle": "Zeugnisse",
@@ -38,7 +42,7 @@
         "description": "Bereits im Alter von 12 Jahren interessierte ich mich für das Programmieren und eignete mir grundlegende Kenntnisse im Webentwicklungsbereich an, indem ich mir HTML, CSS und JavaScript selbst beibrachte. Mit 14 Jahren begann ich außerdem, erste Erfahrungen in der Android-Plattform zu sammeln und entwickelte mit Kotlin eine Chat-App für Android. Während der Pandemie im Jahr 2020 erstellte ich außerdem ein Spiel mithilfe der Unity Game Engine und C#."
       },
       "box2": {
-        "title": "Teilzeitjob als Assistent",
+        "title": "Teilzeitjob als Aushilfe",
         "description": "Im Alter von 15 Jahren begann ich neben der Schule als Aushilfe bei der Zewotherm GmbH zu arbeiten. Diese Tätigkeit führte ich bis zum Beginn meiner Ausbildung im August 2021 fort."
       },
       "box3": {
@@ -47,9 +51,9 @@
       },
       "box4": {
         "title": "Ausbildung als Anwendungsentwickler (FIAE)",
-        "description": "Meine Ausbildung als Anwendungsentwickler (FIAE) mache ich bei der ZW-Systems GmbH und werde ich voraussichtlich im Sommer 2024 abschließen. Während meiner Ausbildung konnte ich meine Kenntnisse im Bereich Webentwicklung erheblich erweitern. Darüber hinaus sammelte ich wertvolle Erfahrungen im Bereich Mobile Development.",
+        "description": "Meine Ausbildung als Anwendungsentwickler (FIAE) machte ich bei der ZW-Systems GmbH und habe diese im Juni 2024 abgeschloßen. Während meiner Ausbildung konnte ich meine Kenntnisse im Bereich Webentwicklung erheblich erweitern. Darüber hinaus sammelte ich wertvolle Erfahrungen im Bereich Mobile Development.",
         "certificates": {
-          "2023Text": "Letztes Zeugniss"
+          "2023Text": "Letztes Zeugnis"
         }
       },
       "box5": {
@@ -64,13 +68,21 @@
   },
   "projects": {
     "title": "Projekte",
+    "metadata": {
+      "title": "Projekte von Marlon Wißkirchen",
+      "description": "Auf dieser Seite können Sie die Projekte von Marlon Wißkirchen sehen"
+    },
     "zewothermApp": {
       "title": "Zewotherm Produktwelt App",
       "message": "Während meiner Ausbildung habe ich eine App entwickelt, um Kunden Informationen über die Unternehmensprodukte zu zeigen. Die App wurde mit ReactNative und Expo entwickelt und im Januar 2022 veröffentlicht."
     },
+    "weatherApp": {
+      "title": "Wetter App",
+      "message": "Zurzeit entwickle ich eine Wetter-App mit Flutter nach dem 'CleanArchitecture; Architekturdesign. Ich entwickele die App, da mir aufgefallen ist, dass es keine vernünftige Wetter App für Android mit einem guten Design gibt. Außerdem macht mir die Entwicklung mit Flutter sehr viel Spaß, deswegen fiel mir die Entscheidung nicht schwer, einfach loszulegen und diese App zu entwickeln."
+    },
     "chattyEvent": {
       "title": "ChattyEvent",
-      "message": "ChattyEvent ist eine mobile plattformübergreifende App, die ich ab Herbst 2022 entwickelt habe. Mit meiner App können Sie mit Ihren Freunden chatten, Partys planen usw. Sie wurde im Frontend mit Flutter und im Backend mit NestJS, MongoDB, Kafka und AWS S3 entwickelt. Sie verwendet GraphQL anstelle einer REST-API für effizientere Anfragen. Die App ist derzeit im Google Play Store und im Apple App Store verfügbar."
+      "message": "ChattyEvent ist eine mobile plattformübergreifende App, die ich ab Herbst 2022 entwickelt habe. Mit meiner App können Sie mit Ihren Freunden chatten, Partys planen usw. Sie wurde im Frontend mit Flutter und im Backend mit NestJS, MongoDB, Kafka und AWS S3 entwickelt. Sie verwendet GraphQL anstelle einer REST-API für effizientere Anfragen. Die App war bis zum 31.3.2024 im Google Play Store und im Apple App Store verfügbar."
     },
     "personalWebsite": {
       "title": "Persönliche Website",
@@ -79,11 +91,15 @@
   },
   "aboutMe": {
     "title": "Über mich",
+    "metadata": {
+      "title": "Über Marlon Wißkirchen",
+      "description": "Auf dieser Seite können Sie details zu Marlon Wißkirchen sehen"
+    },
     "personalData": {
       "degree": "Mittlere Reife (FIAE Ausbildung Abschluss Mitte 2024)"
     },
     "skills": {
-      "title": "Programmierkentnisse",
+      "title": "Programmierkenntnisse",
       "legend": {
         "title": "Legende",
         "goodExperience": "Gute Erfahrung",
@@ -96,11 +112,15 @@
   },
   "contact": {
     "title": "Kontakt",
+    "metadata": {
+      "title": "Kontakdaten von Marlon Wißkirchen",
+      "description": "Auf dieser Seite können Sie die Kontaktdaten von Marlon Wißkirchen sehen"
+    },
     "contactForm": {
       "sendAMessage": "Sende eine Nachricht",
-      "email": "E-Mail",
+      "email": "Deine/ihre E-Mail",
       "phoneNumber": "Tel.",
-      "title": "Titel",
+      "title": "Betreff",
       "message": "Nachricht",
       "success": "E-Mail erfolgreich versendet",
       "error": "Fehler beim senden der E-Mail an: marlon.wisskirchen@outlook.de"
