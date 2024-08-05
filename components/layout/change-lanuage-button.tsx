@@ -1,5 +1,6 @@
-import { Locale, locales } from "@/middleware"
+import { locales } from "@/middleware"
 import { usePathname, useRouter } from "@/navigation"
+import { Locale } from "@/types/locale-type"
 import { Select, SelectItem } from "@nextui-org/select"
 import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
