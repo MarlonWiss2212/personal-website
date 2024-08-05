@@ -5,7 +5,6 @@ import { Fragment, useState } from "react"
 import SidebarContent from "@/components/layout/sidebar-content"
 import Image from "next/image"
 import { NextUIProvider } from "@nextui-org/react"
-import { useTranslations, useLocale } from "next-intl"
 
 export default function RootLayoutComponent({ children }: { children: React.ReactNode }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)

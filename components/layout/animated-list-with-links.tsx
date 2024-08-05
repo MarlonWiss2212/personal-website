@@ -44,8 +44,8 @@ export default function AnimatedListWithLinks({ setSidebarOpen }: { setSidebarOp
       {navigation.map((item, index) => (
         <motion.li variants={container((index + 1) / 5)} initial="hidden" animate="show" key={item.name}>
           <Link
-            onClick={() => setSidebarOpen(false)}
             href={item.href}
+            onClick={() => setSidebarOpen(false)}
             className={classNames(item.current ? "text-white" : "text-gray-400 hover:text-white", "group flex gap-x-3 rounded-md p-2 text-2xl leading-6 font-bold")}
           >
             {item.name}
