@@ -2,7 +2,8 @@
   "language": {
     "title": "Language",
     "english": "English",
-    "german": "German"
+    "german": "German",
+    "spanish": "Spanish"
   },
   "general": {
     "password": "Password",

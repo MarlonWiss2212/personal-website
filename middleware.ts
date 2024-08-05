@@ -1,9 +1,24 @@
 import { NextRequest } from 'next/server';
 import createIntlMiddleware from 'next-intl/middleware';
-import jwt from "jsonwebtoken"
-import { AuthenticationUsecases } from './domain/usecases/authentication.usecases';
 
-export const locales =  ['en', 'de']
+export interface Locale {
+  code: string
+  name: string
+}
+export const locales: Locale[] =  [
+  {
+    code: "en",
+    name: "english"
+  },
+  {
+    code: "de",
+    name: "german"
+  },
+  {
+    code: "es",
+    name: "spanish"
+  },
+]
 
 export default async function middleware(request: NextRequest) {
   // Use the incoming request
@@ -11,7 +26,7 @@ export default async function middleware(request: NextRequest) {
 
   // Create and call the next-intl middleware
   const handleI18nRouting = createIntlMiddleware({
-    locales: locales,
+    locales: locales.map(locale => locale.code),
     defaultLocale
   });
   const response = handleI18nRouting(request);

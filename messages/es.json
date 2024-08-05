@@ -1,0 +1,130 @@
+{
+  "language": {
+    "title": "Idioma",
+    "english": "Inglés",
+    "german": "Alemán",
+    "spanish": "Español"
+  },
+  "general": {
+    "password": "Contraseña",
+    "send": "Enviar"
+  },
+  "month": {
+    "january": "Enero",
+    "february": "Febrero",
+    "march": "Marzo",
+    "april": "Abril",
+    "may": "Mayo",
+    "june": "Junio",
+    "july": "Julio",
+    "august": "Agosto",
+    "september": "Septiembre",
+    "october": "Octubre",
+    "november": "Noviembre",
+    "december": "Diciembre"
+  },
+  "page": {
+    "title": "Inicio",
+    "title1": "Hola, mi nombre es",
+    "title2": "Marlon Wißkirchen",
+    "title3": "Soy un ingeniero de software",
+    "text": "Soy un ingeniero de software de {age} años de Renania-Palatinado, Alemania."
+  },
+  "resume": {
+    "title": "Currículum",
+    "metadata": {
+      "title": "Currículum de Marlon Wißkirchen",
+      "description": "En esta página, puedes ver el currículum de Marlon Wißkirchen"
+    },    
+    "timeline": {
+      "certificateTitle": "Certificados",
+      "box1": {
+        "title": "Primeras experiencias en programación",
+        "description": "Me interesé en la programación a los 12 años y adquirí habilidades básicas en desarrollo web enseñándome HTML, CSS y JavaScript. A los 14 años, también comencé a ganar experiencias iniciales con la plataforma Android y desarrollé una aplicación de chat para Android usando Kotlin. Además, durante la pandemia de 2020, desarrollé un juego usando el motor de juegos Unity y C#."
+      },
+      "box2": {
+        "title": "Trabajo a tiempo parcial como asistente",
+        "description": "A los 15 años, comencé a trabajar a tiempo parcial en Zewotherm GmbH junto con la escuela. Continué este trabajo hasta el inicio de mi aprendizaje en agosto de 2021."
+      },
+      "box3": {
+        "title": "Obtención del certificado de educación secundaria",
+        "description": "Obtuve mi certificado de educación secundaria en el verano de 2021 en IGS Remagen antes de comenzar mi aprendizaje."
+      },
+      "box4": {
+        "title": "Aprendizaje como desarrollador de aplicaciones (FIAE)",
+        "description": "He realizado mi aprendizaje como desarrollador de aplicaciones (FIAE) en ZW-Systems GmbH y lo completé en junio de 2024. Durante mi aprendizaje, amplié significativamente mi conocimiento en desarrollo web y gané valiosa experiencia en el campo del desarrollo móvil.",
+        "certificates": {
+          "2023Text": "Último certificado"
+        }
+      },
+      "box5": {
+        "title": "Desarrollo de una aplicación Flutter junto con el aprendizaje",
+        "description": "En mi búsqueda de expansión continua del conocimiento, desarrollé aplicaciones con Flutter junto con mi aprendizaje. Estas aplicaciones fueron creadas en conjunto con backends de NestJS, MongoDB, Apache Kafka y varias otras herramientas, y las publiqué con éxito."
+      },
+      "box6": {
+        "title": "Desarrollador de software en Denkwerk GmbH",
+        "description": "Desde el 1 de julio de 2024, he estado trabajando en Denkwerk en Colonia como desarrollador de software junior."
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "metadata": {
+      "title": "Proyectos de Marlon Wißkirchen",
+      "description": "En esta página, puedes ver los proyectos de Marlon Wißkirchen"
+    },    
+    "zewothermApp": {
+      "title": "Aplicación Zewotherm Produktwelt",
+      "message": "Durante mi aprendizaje desarrollé una aplicación para clientes para mostrarles información sobre los productos de la empresa. La aplicación está desarrollada con ReactNative y Expo y se lanzó en enero de 2022."
+    },
+    "weatherApp": {
+      "title": "Aplicación del tiempo",
+      "message": "Actualmente estoy desarrollando una aplicación del tiempo con Flutter según el diseño arquitectónico 'CleanArchitecture'. Estoy desarrollando la aplicación porque noté que no hay una aplicación del tiempo decente para Android con un diseño sobresaliente. También disfruto mucho desarrollando con Flutter, por lo que no fue una decisión difícil para mí simplemente seguir adelante y desarrollar esta aplicación."
+    },
+    "chattyEvent": {
+      "title": "ChattyEvent",
+      "message": "ChattyEvent es una aplicación móvil multiplataforma que desarrollé a partir del otoño de 2022. Con mi aplicación puedes chatear con tus amigos, planificar fiestas, etc. Está desarrollada con Flutter en el frontend y NestJS, MongoDB, Kafka y AWS S3 en el backend. Utiliza GraphQL en lugar de una API REST para solicitudes más eficientes. La aplicación estuvo disponible hasta el 31.03.2024 en la tienda de Google Play y la tienda de Apple."
+    },
+    "personalWebsite": {
+      "title": "Sitio web personal",
+      "message": "Este es el sitio web que ves actualmente. Está desarrollado con NextJS y NextUI como biblioteca de UI. Lo diseñé usando Figma."
+    }
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "metadata": {
+      "title": "Sobre Marlon Wißkirchen",
+      "description": "En esta página, puedes ver detalles sobre Marlon Wißkirchen"
+    },    
+    "personalData": {
+      "degree": "Madurez media (Grado de aprendizaje alemán FIAE esperado a mediados de 2024)"
+    },
+    "skills": {
+      "title": "conocimientos de programación",
+      "legend": {
+        "title": "leyenda",
+        "goodExperience": "Buena experiencia",
+        "basicExperience": "Experiencia básica"
+      },
+      "codingLanguages": "Lenguajes de programación",
+      "databases": "Bases de datos",
+      "technologiesPluginsOthers": "Tecnologías / complementos / otros"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "metadata": {
+      "title": "Información de contacto de Marlon Wißkirchen",
+      "description": "En esta página, puedes ver la información de contacto de Marlon Wißkirchen"
+    },    
+    "contactForm": {
+      "sendAMessage": "Enviar un mensaje",
+      "email": "Tu correo electrónico",
+      "phoneNumber": "Tel.",
+      "title": "Título",
+      "message": "Mensaje",
+      "success": "Correo electrónico enviado con éxito",
+      "error": "Error al enviar el correo electrónico a: marlon.wisskirchen@outlook.de"
+    }
+  }
+}
