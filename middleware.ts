@@ -1,10 +1,7 @@
 import { NextRequest } from 'next/server';
 import createIntlMiddleware from 'next-intl/middleware';
+import { Locale } from './types/locale-type';
 
-export interface Locale {
-  code: string
-  name: string
-}
 export const locales: Locale[] =  [
   {
     code: "en",
