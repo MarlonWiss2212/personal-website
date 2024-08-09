@@ -10,7 +10,11 @@ import { motion } from "framer-motion"
 
 export default function ProjectBox({ project, className }: { project: ProjectType, className: string }) {
   return (
-    <motion.div className={className + " overscroll-none"} initial={{ scale: 0, opacity: 0, y: 400 }} animate={{ scale: 1, opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeInOut" } }}>
+    <motion.div 
+      className={className + " overscroll-none"} 
+      initial={{ scale: 0, opacity: 0, y: (Math.random() * (500 - -500) + -500), x: (Math.random() * (500 - -500) + -500) }}
+      animate={{ scale: 1, opacity: 1, y: 0, x: 0, transition: { duration: 0.6, ease: "easeInOut" } }}
+    >
       <Card className="h-full w-full">
         <CardBody className="flex flex-col justify-between gap-4 overscroll-none">
           <div>
