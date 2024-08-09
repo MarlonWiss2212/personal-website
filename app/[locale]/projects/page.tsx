@@ -59,7 +59,7 @@ export default function Projects() {
   ]
 
   return (
-    <div className="flex flex-col gap-10 overscroll-none w-full h-full md:px-10 lg:pb-14">
+    <div className="flex flex-col gap-10 overscroll-none w-full h-full lg:pb-14">
       <AnimatedTitle className="text-5xl font-bold">{t("title")}</AnimatedTitle>
       <div className="flex flex-col flex-grow overflow-y-scroll">
         <div className="grid grid-flow-dense grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">

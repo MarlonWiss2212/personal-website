@@ -15,7 +15,7 @@ export async function generateMetadata({params: {locale}}: any) {
 export default function AboutMe() {
   const t = useTranslations("aboutMe")
   return (
-    <div className="flex flex-col gap-10 overscroll-none h-full md:px-10">
+    <div className="flex flex-col gap-10 overscroll-none h-full">
       <AnimatedTitle className="text-5xl font-bold">{t("title")}</AnimatedTitle>
       <div className="flex flex-col flex-grow overflow-y-scroll gap-8 pb-4 lg:pb-14">
         <PersonalData />

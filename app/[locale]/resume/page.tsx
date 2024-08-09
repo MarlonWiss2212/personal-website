@@ -17,7 +17,7 @@ export default function Resume() {
   return (
     <PasswordProtectedRoute>
       <div className="flex flex-col gap-4 overscroll-none h-full">
-        <AnimatedTitle className="text-5xl font-bold md:px-10">{t("title")}</AnimatedTitle>
+        <AnimatedTitle className="text-5xl font-bold">{t("title")}</AnimatedTitle>
         <Timeline />
       </div>
     </PasswordProtectedRoute>
