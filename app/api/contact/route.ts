@@ -13,9 +13,9 @@ export async function POST(request: NextRequest) {
     const emailData: SendMailType = request?.json != null ? await request.json() : request.body;
 
     let responseData: ContactRouteResponseType = {
-      messageError: false,
+      messageError: emailData.message === "",
       phoneNumberError: emailData.phoneNumber != null && emailData.phoneNumber != "" ? !validationUseCases.isPhoneNumberValid(emailData.phoneNumber) : false,
-      titleError: false,
+      titleError: emailData.title === "",
       sendFromEmailError: !validationUseCases.isEmailValid(emailData.sendFromEmail),
     }
 

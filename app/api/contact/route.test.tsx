@@ -22,6 +22,32 @@ describe("Send Email Route", () => {
     
     expect(response.status).toBe(500)
   })
+  it("should return 500 if title is empty", async () => {
+    const data: SendMailType = {
+      message: "Test Message",
+      title: "",
+      sendFromEmail: "marlon",
+      phoneNumber: "Test",
+      testing: true,
+    }
+    const { req } = createMocks({ body: data, method: "POST" })
+    const response = await POST(req)
+    
+    expect(response.status).toBe(500)
+  })
+  it("should return 500 if message is empty", async () => {
+    const data: SendMailType = {
+      message: "",
+      title: "Test Title",
+      sendFromEmail: "marlon",
+      phoneNumber: "Test",
+      testing: true,
+    }
+    const { req } = createMocks({ body: data, method: "POST" })
+    const response = await POST(req)
+    
+    expect(response.status).toBe(500)
+  })
   it("should return 500 if phoneNumber is wrong", async () => {
     const data: SendMailType = {
       message: "Test Message",
@@ -35,10 +61,10 @@ describe("Send Email Route", () => {
 
     expect(response.status).toBe(500)
   })
-  it("should return both error messages if email and phoneNumber are wrong", async () => {
+  it("should return all error messages if email, phoneNumber, title and message are wrong", async () => {
     const data: SendMailType = {
-      message: "Test Message",
-      title: "Test Title",
+      message: "",
+      title: "",
       sendFromEmail: "Tecdsfst",
       phoneNumber: "Tedft",
       testing: true,
@@ -48,9 +74,9 @@ describe("Send Email Route", () => {
     const bodyData = await response.json()
 
     expect(bodyData).toEqual({
-      messageError: false,
+      messageError: true,
       phoneNumberError: true,
-      titleError: false,
+      titleError: true,
       sendFromEmailError: true,
     })
   })

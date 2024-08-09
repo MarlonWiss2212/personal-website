@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import {SendMailType} from "@/types/send-mail-type";
 import {useTranslations} from "next-intl";
 import {Button, Input, Textarea, useDisclosure} from "@nextui-org/react";
-import {Modal, ModalContent, ModalHeader} from "@nextui-org/modal";
+import {Modal, ModalContent, ModalHeader, ModalFooter} from "@nextui-org/modal";
 import { ContactRouteResponseType } from "@/types/contact-route-response-type";
 
 export default function ContactForm() {
@@ -72,12 +72,22 @@ export default function ContactForm() {
       <Modal isOpen={errorModal.isOpen} onOpenChange={errorModal.onOpenChange}>
         <ModalContent>
           <ModalHeader>{t("error")}</ModalHeader>
+          <ModalFooter>
+            <Button color="danger" variant="light" onPress={errorModal.onOpenChange}>
+              {t('close')}
+            </Button>
+          </ModalFooter>
         </ModalContent>
       </Modal>
       {/** Success Modal */}
       <Modal isOpen={successModal.isOpen} onOpenChange={successModal.onOpenChange}>
         <ModalContent>
           <ModalHeader>{t("success")}</ModalHeader>
+          <ModalFooter>
+            <Button color="danger" variant="light" onPress={errorModal.onOpenChange}>
+            {t('close')}
+            </Button>
+          </ModalFooter>
         </ModalContent>
       </Modal>
       <div className="w-full mt-12">

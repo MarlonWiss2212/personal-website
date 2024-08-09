@@ -124,7 +124,8 @@
       "title": "Betreff",
       "message": "Nachricht",
       "success": "E-Mail erfolgreich versendet",
-      "error": "Fehler beim senden der E-Mail an: marlon.wisskirchen@outlook.de"
+      "error": "Fehler beim senden der E-Mail an: marlon.wisskirchen@outlook.de",
+      "close": "Schließen"
     }
   }
 }

@@ -124,7 +124,8 @@
       "title": "Título",
       "message": "Mensaje",
       "success": "Correo electrónico enviado con éxito",
-      "error": "Error al enviar el correo electrónico a: marlon.wisskirchen@outlook.de"
+      "error": "Error al enviar el correo electrónico a: marlon.wisskirchen@outlook.de",
+      "close": "Cerrar"
     }
   }
 }
