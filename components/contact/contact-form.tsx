@@ -84,7 +84,7 @@ export default function ContactForm() {
         <ModalContent>
           <ModalHeader>{t("success")}</ModalHeader>
           <ModalFooter>
-            <Button color="danger" variant="light" onPress={errorModal.onOpenChange}>
+            <Button color="danger" variant="light" onPress={successModal.onOpenChange}>
             {t('close')}
             </Button>
           </ModalFooter>
