@@ -1,14 +1,19 @@
 import PersonalData from "@/components/about-me/personal-data"
 import Skills from "@/components/about-me/skills"
 import AnimatedTitle from "@/components/general/animated-title"
+import { Metadata } from "next"
 import { useTranslations } from "next-intl"
 import { getTranslations } from "next-intl/server"
 
-export async function generateMetadata({params: {locale}}: any) {
+export async function generateMetadata({params: {locale}}: any): Promise<Metadata> {
   const t = await getTranslations({locale: locale, namespace: "aboutMe.metadata"})
   return {
     title: t('title'),
     description: t('description'),
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+    }
   }
 }
 

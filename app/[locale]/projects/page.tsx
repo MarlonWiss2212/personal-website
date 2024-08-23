@@ -3,12 +3,17 @@ import { ProjectType } from "@/types/project-type"
 import AnimatedTitle from "@/components/general/animated-title"
 import { useTranslations } from "next-intl"
 import { getTranslations } from "next-intl/server"
+import { Metadata } from "next"
 
-export async function generateMetadata({params: {locale}}: any) {
+export async function generateMetadata({params: {locale}}: any): Promise<Metadata> {
   const t = await getTranslations({locale: locale, namespace: "projects.metadata"})
   return {
     title: t('title'),
     description: t('description'),
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+    }
   }
 }
 

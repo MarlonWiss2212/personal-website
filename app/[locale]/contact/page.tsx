@@ -2,12 +2,17 @@ import AnimatedTitle from "@/components/general/animated-title"
 import { useTranslations } from "next-intl"
 import ContactForm from "@/components/contact/contact-form";
 import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
 
-export async function generateMetadata({params: {locale}}: any) {
+export async function generateMetadata({params: {locale}}: any): Promise<Metadata> {
   const t = await getTranslations({locale: locale, namespace: "contact.metadata"})
   return {
     title: t('title'),
     description: t('description'),
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+    }
   }
 }
 
